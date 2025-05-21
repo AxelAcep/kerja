@@ -162,3 +162,13 @@ $routes->group('author', ['filter' => 'authauthor'], static function ($routes) {
         $routes->put('profile', 'Author\SettingAuthorController::profile_password');
     });
 });
+
+$routes->group('kas', ['filter' => 'authcombined'], function($routes) {
+    $routes->get('uang', 'Kas\KasController::getUangKas');
+    $routes->get('pemasukan', 'Kas\KasController::getPemasukan');
+    $routes->get('pengeluaran', 'Kas\KasController::getPengeluaran');
+    $routes->get('transaksi', 'Kas\KasController::getAllTransaksi');
+    $routes->post('tambah', 'Kas\KasController::tambahKas');
+    $routes->post('kurang', 'Kas\KasController::kurangKas');
+});
+
