@@ -1,0 +1,144 @@
+ERROR - 2025-05-22 00:59:59 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'newcli', 3306, '', 0)
+#1 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Data\Job\Job1\job11\app\Models\VisitorModel.php(15): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 C:\Data\Job\Job1\job11\app\Controllers\BaseController.php(67): App\Models\VisitorModel->count_visitor('::1', 'Edge 136.0.0.0')
+#5 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(890): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#6 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+#7 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Data\Job\Job1\job11\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Data\\Job\\Job...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Data\Job\Job1\job11\app\Models\VisitorModel.php(15): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#3 C:\Data\Job\Job1\job11\app\Controllers\BaseController.php(67): App\Models\VisitorModel->count_visitor('::1', 'Edge 136.0.0.0')
+#4 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(890): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+#6 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Data\Job\Job1\job11\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Data\\Job\\Job...')
+#9 {main}
+CRITICAL - 2025-05-22 00:59:59 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\VisitorModel.php(15): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_visitors WHERE visit_ip=\'::1\' AND DATE(visit_date)=CURDATE()')
+ 3 APPPATH\Controllers\BaseController.php(67): App\Models\VisitorModel->count_visitor('::1', 'Edge 136.0.0.0')
+ 4 SYSTEMPATH\CodeIgniter.php(890): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 5 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2025-05-22 01:00:12 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'newcli', 3306, '', 0)
+#1 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Data\Job\Job1\job11\app\Models\VisitorModel.php(15): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 C:\Data\Job\Job1\job11\app\Controllers\BaseController.php(67): App\Models\VisitorModel->count_visitor('::1', 'Edge 136.0.0.0')
+#5 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(890): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#6 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+#7 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Data\Job\Job1\job11\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Data\\Job\\Job...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Data\Job\Job1\job11\app\Models\VisitorModel.php(15): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#3 C:\Data\Job\Job1\job11\app\Controllers\BaseController.php(67): App\Models\VisitorModel->count_visitor('::1', 'Edge 136.0.0.0')
+#4 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(890): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+#6 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Data\Job\Job1\job11\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Data\\Job\\Job...')
+#9 {main}
+CRITICAL - 2025-05-22 01:00:12 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\VisitorModel.php(15): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_visitors WHERE visit_ip=\'::1\' AND DATE(visit_date)=CURDATE()')
+ 3 APPPATH\Controllers\BaseController.php(67): App\Models\VisitorModel->count_visitor('::1', 'Edge 136.0.0.0')
+ 4 SYSTEMPATH\CodeIgniter.php(890): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 5 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-22 07:23:06 --> Undefined property: App\Controllers\Kas\KasController::$uangKasModel
+in APPPATH\Controllers\Kas\KasController.php on line 69.
+ 1 APPPATH\Controllers\Kas\KasController.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Kas\\KasController::$uangKasModel', 'APPPATH\\Controllers\\Kas\\KasController.php', 69)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->tambahKas()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2025-05-22 07:25:51 --> mysqli_sql_exception: Duplicate entry '' for key 'PRIMARY' in C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Data\Job\Job1\job11\app\Controllers\Kas\KasController.php(65): CodeIgniter\Model->insert(Array)
+#8 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Kas\KasController->tambahKas()
+#9 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+#10 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Data\Job\Job1\job11\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Data\\Job\\Job...')
+#13 {main}
+CRITICAL - 2025-05-22 07:25:51 --> Duplicate entry '' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tbl_transaksi_kas` (`jumlah`, `kategori`, `tanggal`, `user_id`, `jenis`) VALUES (\'12000\', \'Pemasukan Umum\', \'2025-05-22\', NULL, \'pemasukan\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_transaksi_kas` (`jumlah`, `kategori`, `tanggal`, `user_id`, `jenis`) VALUES (\'12000\', \'Pemasukan Umum\', \'2025-05-22\', NULL, \'pemasukan\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_transaksi_kas` (`jumlah`, `kategori`, `tanggal`, `user_id`, `jenis`) VALUES (\'12000\', \'Pemasukan Umum\', \'2025-05-22\', NULL, \'pemasukan\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_transaksi_kas` (`jumlah`, `kategori`, `tanggal`, `user_id`, `jenis`) VALUES (:jumlah:, :kategori:, :tanggal:, :user_id:, :jenis:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Kas\KasController.php(65): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->tambahKas()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2025-05-22 07:25:58 --> mysqli_sql_exception: Duplicate entry '' for key 'PRIMARY' in C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Data\Job\Job1\job11\app\Controllers\Kas\KasController.php(65): CodeIgniter\Model->insert(Array)
+#8 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Kas\KasController->tambahKas()
+#9 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+#10 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Data\Job\Job1\job11\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Data\\Job\\Job...')
+#13 {main}
+CRITICAL - 2025-05-22 07:25:58 --> Duplicate entry '' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tbl_transaksi_kas` (`jumlah`, `kategori`, `tanggal`, `user_id`, `jenis`) VALUES (\'12000\', \'Pemasukan Umum\', \'2025-05-22\', NULL, \'pemasukan\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_transaksi_kas` (`jumlah`, `kategori`, `tanggal`, `user_id`, `jenis`) VALUES (\'12000\', \'Pemasukan Umum\', \'2025-05-22\', NULL, \'pemasukan\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_transaksi_kas` (`jumlah`, `kategori`, `tanggal`, `user_id`, `jenis`) VALUES (\'12000\', \'Pemasukan Umum\', \'2025-05-22\', NULL, \'pemasukan\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_transaksi_kas` (`jumlah`, `kategori`, `tanggal`, `user_id`, `jenis`) VALUES (:jumlah:, :kategori:, :tanggal:, :user_id:, :jenis:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Kas\KasController.php(65): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->tambahKas()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

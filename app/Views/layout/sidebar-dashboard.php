@@ -114,7 +114,9 @@
             <li class="<?= ($active == 'dashboard') ? 'active' : '' ?>"><a href="/<?= session('role'); ?>" class="waves-effect waves-button"><span class="menu-icon icon-home"></span>
                     <p>Dashboard</p>
                 </a></li>
-            <li class="droplink <?= ($active == 'post') ? 'active' : '' ?>"><a href="#" class="waves-effect waves-button"><span class="menu-icon icon-pin"></span>
+            <li class="droplink <?= ($active == 'post') ? 'active open' : '' ?>">
+                <a href="#" class="waves-effect waves-button">
+                    <span class="menu-icon icon-pin"></span>
                     <p>Post</p><span class="arrow"></span>
                 </a>
                 <ul class="sub-menu">
@@ -122,6 +124,19 @@
                     <li><a href="/<?= session('role'); ?>/post/add_new">Add New</a></li>
                     <li><a href="/<?= session('role'); ?>/category">Category</a></li>
                     <li><a href="/<?= session('role'); ?>/tag">Tag</a></li>
+                </ul>
+            </li>
+            <li class="droplink <?= ($active == 'kas') ? 'active' : '' ?>">
+                <a href="#" class="waves-effect waves-button">
+                    <span class="menu-icon fa fa-money"></span>
+                    <p>Uang Kas</p>
+                    <span class="arrow"></span>
+                </a>    
+                <ul class="sub-menu">
+                    <li><a href="/kas/pemasukan">Pemasukan</a></li>
+                    <li><a href="/kas/pengeluaran">Pengeluaran</a></li>
+                    <li><a href="/kas/kategori">Kategori</a></li>
+                    <li><a href="/kas/laporan">Laporan</a></li>
                 </ul>
             </li>
             <?php if (session('role') == 'admin') : ?>

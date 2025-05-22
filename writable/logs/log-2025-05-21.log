@@ -1,0 +1,1613 @@
+CRITICAL - 2025-05-21 01:30:44 --> Creation of dynamic property App\Controllers\HomeController::$homeModel is deprecated
+in APPPATH\Controllers\HomeController.php on line 14.
+ 1 APPPATH\Controllers\HomeController.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\HomeController::$homeModel is deprecated', 'APPPATH\\Controllers\\HomeController.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 01:32:38 --> Creation of dynamic property App\Controllers\LoginController::$session is deprecated
+in APPPATH\Controllers\BaseController.php on line 52.
+ 1 APPPATH\Controllers\BaseController.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\LoginController::$session is deprecated', 'APPPATH\\Controllers\\BaseController.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(890): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 01:32:42 --> Creation of dynamic property App\Controllers\HomeController::$homeModel is deprecated
+in APPPATH\Controllers\HomeController.php on line 14.
+ 1 APPPATH\Controllers\HomeController.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\HomeController::$homeModel is deprecated', 'APPPATH\\Controllers\\HomeController.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 01:32:45 --> Creation of dynamic property App\Controllers\HomeController::$homeModel is deprecated
+in APPPATH\Controllers\HomeController.php on line 14.
+ 1 APPPATH\Controllers\HomeController.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\HomeController::$homeModel is deprecated', 'APPPATH\\Controllers\\HomeController.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 01:35:04 --> Creation of dynamic property App\Controllers\HomeController::$homeModel is deprecated
+in APPPATH\Controllers\HomeController.php on line 14.
+ 1 APPPATH\Controllers\HomeController.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\HomeController::$homeModel is deprecated', 'APPPATH\\Controllers\\HomeController.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 01:35:05 --> Creation of dynamic property App\Controllers\HomeController::$homeModel is deprecated
+in APPPATH\Controllers\HomeController.php on line 14.
+ 1 APPPATH\Controllers\HomeController.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\HomeController::$homeModel is deprecated', 'APPPATH\\Controllers\\HomeController.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 06:40:58 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 186.
+ 1 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2025-05-21 06:40:58 --> Uncaught Error: Call to undefined function CodeIgniter\CLI\mb_strpos() in C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CLI\CLI.php:776
+Stack trace:
+#0 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CLI\CLI.php(161): CodeIgniter\CLI\CLI::parseCommandLine()
+#1 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CLI\CLI.php(1018): CodeIgniter\CLI\CLI::init()
+#2 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(282): include_once('C:\\Data\\Job\\Job...')
+#3 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Data\\Job\\Job...')
+#4 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('CodeIgniter\\CLI...')
+#5 C:\Data\Job\Job1\job11\app\Views\errors\cli\error_exception.php(6): CodeIgniter\Autoloader\Autoloader->loadClass('CodeIgniter\\CLI...')
+#6 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Debug\Exceptions.php(284): include('C:\\Data\\Job\\Job...')
+#7 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Debug\Exceptions.php(287): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#8 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Debug\Exceptions.php(139): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#9 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#10 {main}
+  thrown
+in SYSTEMPATH\CLI\CLI.php on line 776.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-05-21 06:41:10 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 186.
+ 1 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2025-05-21 06:41:10 --> Uncaught Error: Call to undefined function CodeIgniter\CLI\mb_strpos() in C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CLI\CLI.php:776
+Stack trace:
+#0 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CLI\CLI.php(161): CodeIgniter\CLI\CLI::parseCommandLine()
+#1 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CLI\CLI.php(1018): CodeIgniter\CLI\CLI::init()
+#2 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(282): include_once('C:\\Data\\Job\\Job...')
+#3 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Data\\Job\\Job...')
+#4 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('CodeIgniter\\CLI...')
+#5 C:\Data\Job\Job1\job11\app\Views\errors\cli\error_exception.php(6): CodeIgniter\Autoloader\Autoloader->loadClass('CodeIgniter\\CLI...')
+#6 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Debug\Exceptions.php(284): include('C:\\Data\\Job\\Job...')
+#7 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Debug\Exceptions.php(287): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#8 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Debug\Exceptions.php(139): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#9 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#10 {main}
+  thrown
+in SYSTEMPATH\CLI\CLI.php on line 776.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-05-21 06:41:38 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 186.
+ 1 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2025-05-21 06:41:38 --> Uncaught Error: Call to undefined function CodeIgniter\CLI\mb_strpos() in C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CLI\CLI.php:776
+Stack trace:
+#0 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CLI\CLI.php(161): CodeIgniter\CLI\CLI::parseCommandLine()
+#1 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CLI\CLI.php(1018): CodeIgniter\CLI\CLI::init()
+#2 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(282): include_once('C:\\Data\\Job\\Job...')
+#3 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Data\\Job\\Job...')
+#4 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('CodeIgniter\\CLI...')
+#5 C:\Data\Job\Job1\job11\app\Views\errors\cli\error_exception.php(6): CodeIgniter\Autoloader\Autoloader->loadClass('CodeIgniter\\CLI...')
+#6 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Debug\Exceptions.php(284): include('C:\\Data\\Job\\Job...')
+#7 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Debug\Exceptions.php(287): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#8 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Debug\Exceptions.php(139): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#9 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#10 {main}
+  thrown
+in SYSTEMPATH\CLI\CLI.php on line 776.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-05-21 06:43:26 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 186.
+ 1 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2025-05-21 06:43:26 --> Uncaught Error: Call to undefined function CodeIgniter\CLI\mb_strpos() in C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CLI\CLI.php:776
+Stack trace:
+#0 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CLI\CLI.php(161): CodeIgniter\CLI\CLI::parseCommandLine()
+#1 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CLI\CLI.php(1018): CodeIgniter\CLI\CLI::init()
+#2 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(282): include_once('C:\\Data\\Job\\Job...')
+#3 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Data\\Job\\Job...')
+#4 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('CodeIgniter\\CLI...')
+#5 C:\Data\Job\Job1\job11\app\Views\errors\cli\error_exception.php(6): CodeIgniter\Autoloader\Autoloader->loadClass('CodeIgniter\\CLI...')
+#6 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Debug\Exceptions.php(284): include('C:\\Data\\Job\\Job...')
+#7 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Debug\Exceptions.php(287): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#8 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Debug\Exceptions.php(139): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#9 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#10 {main}
+  thrown
+in SYSTEMPATH\CLI\CLI.php on line 776.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-05-21 06:45:46 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 186.
+ 1 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2025-05-21 06:45:46 --> Uncaught Error: Call to undefined function CodeIgniter\CLI\mb_strpos() in C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CLI\CLI.php:776
+Stack trace:
+#0 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CLI\CLI.php(161): CodeIgniter\CLI\CLI::parseCommandLine()
+#1 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CLI\CLI.php(1018): CodeIgniter\CLI\CLI::init()
+#2 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(282): include_once('C:\\Data\\Job\\Job...')
+#3 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Data\\Job\\Job...')
+#4 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('CodeIgniter\\CLI...')
+#5 C:\Data\Job\Job1\job11\app\Views\errors\cli\error_exception.php(6): CodeIgniter\Autoloader\Autoloader->loadClass('CodeIgniter\\CLI...')
+#6 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Debug\Exceptions.php(284): include('C:\\Data\\Job\\Job...')
+#7 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Debug\Exceptions.php(287): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#8 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Debug\Exceptions.php(139): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#9 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#10 {main}
+  thrown
+in SYSTEMPATH\CLI\CLI.php on line 776.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-05-21 06:49:16 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 186.
+ 1 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2025-05-21 06:49:16 --> Uncaught Error: Call to undefined function CodeIgniter\CLI\mb_strpos() in C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CLI\CLI.php:776
+Stack trace:
+#0 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CLI\CLI.php(161): CodeIgniter\CLI\CLI::parseCommandLine()
+#1 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CLI\CLI.php(1018): CodeIgniter\CLI\CLI::init()
+#2 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(282): include_once('C:\\Data\\Job\\Job...')
+#3 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Data\\Job\\Job...')
+#4 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('CodeIgniter\\CLI...')
+#5 C:\Data\Job\Job1\job11\app\Views\errors\cli\error_exception.php(6): CodeIgniter\Autoloader\Autoloader->loadClass('CodeIgniter\\CLI...')
+#6 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Debug\Exceptions.php(284): include('C:\\Data\\Job\\Job...')
+#7 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Debug\Exceptions.php(287): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#8 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Debug\Exceptions.php(139): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#9 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#10 {main}
+  thrown
+in SYSTEMPATH\CLI\CLI.php on line 776.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-05-21 06:50:33 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 186.
+ 1 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2025-05-21 06:50:33 --> Uncaught Error: Call to undefined function CodeIgniter\CLI\mb_strpos() in C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CLI\CLI.php:776
+Stack trace:
+#0 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CLI\CLI.php(161): CodeIgniter\CLI\CLI::parseCommandLine()
+#1 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CLI\CLI.php(1018): CodeIgniter\CLI\CLI::init()
+#2 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(282): include_once('C:\\Data\\Job\\Job...')
+#3 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Data\\Job\\Job...')
+#4 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('CodeIgniter\\CLI...')
+#5 C:\Data\Job\Job1\job11\app\Views\errors\cli\error_exception.php(6): CodeIgniter\Autoloader\Autoloader->loadClass('CodeIgniter\\CLI...')
+#6 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Debug\Exceptions.php(284): include('C:\\Data\\Job\\Job...')
+#7 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Debug\Exceptions.php(287): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#8 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Debug\Exceptions.php(139): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#9 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#10 {main}
+  thrown
+in SYSTEMPATH\CLI\CLI.php on line 776.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-05-21 06:51:08 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 186.
+ 1 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2025-05-21 06:51:15 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 186.
+ 1 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2025-05-21 06:51:15 --> Uncaught Error: Call to undefined function CodeIgniter\CLI\mb_strpos() in C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CLI\CLI.php:776
+Stack trace:
+#0 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CLI\CLI.php(161): CodeIgniter\CLI\CLI::parseCommandLine()
+#1 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CLI\CLI.php(1018): CodeIgniter\CLI\CLI::init()
+#2 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(282): include_once('C:\\Data\\Job\\Job...')
+#3 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Data\\Job\\Job...')
+#4 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('CodeIgniter\\CLI...')
+#5 C:\Data\Job\Job1\job11\app\Views\errors\cli\error_exception.php(6): CodeIgniter\Autoloader\Autoloader->loadClass('CodeIgniter\\CLI...')
+#6 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Debug\Exceptions.php(284): include('C:\\Data\\Job\\Job...')
+#7 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Debug\Exceptions.php(287): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#8 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Debug\Exceptions.php(139): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#9 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#10 {main}
+  thrown
+in SYSTEMPATH\CLI\CLI.php on line 776.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-05-21 06:51:18 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 186.
+ 1 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2025-05-21 06:51:18 --> Uncaught Error: Call to undefined function CodeIgniter\CLI\mb_strpos() in C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CLI\CLI.php:776
+Stack trace:
+#0 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CLI\CLI.php(161): CodeIgniter\CLI\CLI::parseCommandLine()
+#1 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CLI\CLI.php(1018): CodeIgniter\CLI\CLI::init()
+#2 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(282): include_once('C:\\Data\\Job\\Job...')
+#3 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Data\\Job\\Job...')
+#4 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('CodeIgniter\\CLI...')
+#5 C:\Data\Job\Job1\job11\app\Views\errors\cli\error_exception.php(6): CodeIgniter\Autoloader\Autoloader->loadClass('CodeIgniter\\CLI...')
+#6 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Debug\Exceptions.php(284): include('C:\\Data\\Job\\Job...')
+#7 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Debug\Exceptions.php(287): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#8 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Debug\Exceptions.php(139): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#9 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#10 {main}
+  thrown
+in SYSTEMPATH\CLI\CLI.php on line 776.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-05-21 06:52:07 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 186.
+ 1 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2025-05-21 06:52:07 --> Uncaught Error: Call to undefined function CodeIgniter\CLI\mb_strpos() in C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CLI\CLI.php:776
+Stack trace:
+#0 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CLI\CLI.php(161): CodeIgniter\CLI\CLI::parseCommandLine()
+#1 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CLI\CLI.php(1018): CodeIgniter\CLI\CLI::init()
+#2 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(282): include_once('C:\\Data\\Job\\Job...')
+#3 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Data\\Job\\Job...')
+#4 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('CodeIgniter\\CLI...')
+#5 C:\Data\Job\Job1\job11\app\Views\errors\cli\error_exception.php(6): CodeIgniter\Autoloader\Autoloader->loadClass('CodeIgniter\\CLI...')
+#6 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Debug\Exceptions.php(284): include('C:\\Data\\Job\\Job...')
+#7 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Debug\Exceptions.php(287): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#8 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Debug\Exceptions.php(139): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#9 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#10 {main}
+  thrown
+in SYSTEMPATH\CLI\CLI.php on line 776.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-05-21 01:53:26 --> Creation of dynamic property App\Controllers\HomeController::$homeModel is deprecated
+in APPPATH\Controllers\HomeController.php on line 14.
+ 1 APPPATH\Controllers\HomeController.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\HomeController::$homeModel is deprecated', 'APPPATH\\Controllers\\HomeController.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 01:54:33 --> Creation of dynamic property App\Controllers\HomeController::$session is deprecated
+in APPPATH\Controllers\BaseController.php on line 52.
+ 1 APPPATH\Controllers\BaseController.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\HomeController::$session is deprecated', 'APPPATH\\Controllers\\BaseController.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(890): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 01:56:35 --> Creation of dynamic property App\Controllers\Admin\AdminController::$inboxModel is deprecated
+in APPPATH\Controllers\Admin\AdminController.php on line 14.
+ 1 APPPATH\Controllers\Admin\AdminController.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\Admin\\AdminController::$inboxModel is deprecated', 'APPPATH\\Controllers\\Admin\\AdminController.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Admin\AdminController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 01:57:46 --> Creation of dynamic property App\Controllers\Admin\AdminController::$inboxModel is deprecated
+in APPPATH\Controllers\Admin\AdminController.php on line 14.
+ 1 APPPATH\Controllers\Admin\AdminController.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\Admin\\AdminController::$inboxModel is deprecated', 'APPPATH\\Controllers\\Admin\\AdminController.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Admin\AdminController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 01:57:47 --> Creation of dynamic property App\Controllers\Admin\AdminController::$inboxModel is deprecated
+in APPPATH\Controllers\Admin\AdminController.php on line 14.
+ 1 APPPATH\Controllers\Admin\AdminController.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\Admin\\AdminController::$inboxModel is deprecated', 'APPPATH\\Controllers\\Admin\\AdminController.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Admin\AdminController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 01:57:48 --> Creation of dynamic property App\Controllers\Admin\AdminController::$inboxModel is deprecated
+in APPPATH\Controllers\Admin\AdminController.php on line 14.
+ 1 APPPATH\Controllers\Admin\AdminController.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\Admin\\AdminController::$inboxModel is deprecated', 'APPPATH\\Controllers\\Admin\\AdminController.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Admin\AdminController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 01:59:31 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+in APPPATH\Controllers\Admin\AdminController.php on line 53.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin\AdminController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 02:01:02 --> Creation of dynamic property App\Controllers\Admin\SubscriberAdminController::$inboxModel is deprecated
+in APPPATH\Controllers\Admin\SubscriberAdminController.php on line 14.
+ 1 APPPATH\Controllers\Admin\SubscriberAdminController.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\Admin\\SubscriberAdminController::$inboxModel is deprecated', 'APPPATH\\Controllers\\Admin\\SubscriberAdminController.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Admin\SubscriberAdminController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 02:01:04 --> Creation of dynamic property App\Controllers\Admin\InboxAdminController::$inboxModel is deprecated
+in APPPATH\Controllers\Admin\InboxAdminController.php on line 14.
+ 1 APPPATH\Controllers\Admin\InboxAdminController.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\Admin\\InboxAdminController::$inboxModel is deprecated', 'APPPATH\\Controllers\\Admin\\InboxAdminController.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Admin\InboxAdminController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 02:01:06 --> Creation of dynamic property App\Controllers\Admin\PostAdminController::$inboxModel is deprecated
+in APPPATH\Controllers\Admin\PostAdminController.php on line 16.
+ 1 APPPATH\Controllers\Admin\PostAdminController.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\Admin\\PostAdminController::$inboxModel is deprecated', 'APPPATH\\Controllers\\Admin\\PostAdminController.php', 16)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Admin\PostAdminController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 02:01:27 --> Class "App\Models\TransaksiKasModel" not found
+in APPPATH\Controllers\Kas\KasController.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Kas\KasController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 02:03:28 --> Class "App\Models\TransaksiKasModel" not found
+in APPPATH\Controllers\Kas\KasController.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Kas\KasController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 02:03:30 --> Class "App\Models\TransaksiKasModel" not found
+in APPPATH\Controllers\Kas\KasController.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Kas\KasController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 02:03:57 --> Creation of dynamic property App\Controllers\Admin\InboxAdminController::$inboxModel is deprecated
+in APPPATH\Controllers\Admin\InboxAdminController.php on line 14.
+ 1 APPPATH\Controllers\Admin\InboxAdminController.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\Admin\\InboxAdminController::$inboxModel is deprecated', 'APPPATH\\Controllers\\Admin\\InboxAdminController.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Admin\InboxAdminController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 02:04:33 --> Creation of dynamic property App\Controllers\Author\AuthorController::$commentModel is deprecated
+in APPPATH\Controllers\Author\AuthorController.php on line 13.
+ 1 APPPATH\Controllers\Author\AuthorController.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\Author\\AuthorController::$commentModel is deprecated', 'APPPATH\\Controllers\\Author\\AuthorController.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Author\AuthorController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 07:34:01 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 186.
+ 1 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2025-05-21 07:34:02 --> Uncaught Error: Call to undefined function CodeIgniter\CLI\mb_strpos() in C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CLI\CLI.php:776
+Stack trace:
+#0 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CLI\CLI.php(161): CodeIgniter\CLI\CLI::parseCommandLine()
+#1 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CLI\CLI.php(1018): CodeIgniter\CLI\CLI::init()
+#2 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(282): include_once('C:\\Data\\Job\\Job...')
+#3 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Data\\Job\\Job...')
+#4 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('CodeIgniter\\CLI...')
+#5 C:\Data\Job\Job1\job11\app\Views\errors\cli\error_exception.php(6): CodeIgniter\Autoloader\Autoloader->loadClass('CodeIgniter\\CLI...')
+#6 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Debug\Exceptions.php(284): include('C:\\Data\\Job\\Job...')
+#7 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Debug\Exceptions.php(287): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#8 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Debug\Exceptions.php(139): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#9 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#10 {main}
+  thrown
+in SYSTEMPATH\CLI\CLI.php on line 776.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-05-21 07:39:58 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 186.
+ 1 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2025-05-21 07:42:16 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 186.
+ 1 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2025-05-21 07:42:18 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 186.
+ 1 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2025-05-21 09:45:00 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 186.
+ 1 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2025-05-21 09:45:02 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 186.
+ 1 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2025-05-21 09:45:46 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 186.
+ 1 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2025-05-21 09:45:51 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 186.
+ 1 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2025-05-21 09:48:06 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 186.
+ 1 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+ERROR - 2025-05-21 02:51:46 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'newcli' in C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'newcli', 3306, '', 0)
+#1 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Data\Job\Job1\job11\app\Models\VisitorModel.php(15): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 C:\Data\Job\Job1\job11\app\Controllers\BaseController.php(67): App\Models\VisitorModel->count_visitor('::1', 'Edge 136.0.0.0')
+#5 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(890): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#6 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+#7 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Data\Job\Job1\job11\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Data\\Job\\Job...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'newcli' in C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Data\Job\Job1\job11\app\Models\VisitorModel.php(15): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#3 C:\Data\Job\Job1\job11\app\Controllers\BaseController.php(67): App\Models\VisitorModel->count_visitor('::1', 'Edge 136.0.0.0')
+#4 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(890): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+#6 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Data\Job\Job1\job11\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Data\\Job\\Job...')
+#9 {main}
+CRITICAL - 2025-05-21 02:51:46 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'newcli'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\VisitorModel.php(15): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_visitors WHERE visit_ip=\'::1\' AND DATE(visit_date)=CURDATE()')
+ 3 APPPATH\Controllers\BaseController.php(67): App\Models\VisitorModel->count_visitor('::1', 'Edge 136.0.0.0')
+ 4 SYSTEMPATH\CodeIgniter.php(890): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 5 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 02:55:24 --> Undefined array key "about_name"
+in APPPATH\Views\home_view.php on line 11.
+ 1 APPPATH\Views\home_view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "about_name"', 'APPPATH\\Views\\home_view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home_view', [], true)
+ 5 APPPATH\Controllers\HomeController.php(30): view('home_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\HomeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 02:55:28 --> Undefined array key "about_name"
+in APPPATH\Views\home_view.php on line 11.
+ 1 APPPATH\Views\home_view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "about_name"', 'APPPATH\\Views\\home_view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home_view', [], true)
+ 5 APPPATH\Controllers\HomeController.php(30): view('home_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\HomeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 03:00:47 --> Class "App\Models\TransaksiKasModel" not found
+in APPPATH\Controllers\Kas\KasController.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Kas\KasController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 03:01:49 --> `App\Models\UangKasModel` model class does not specify a Primary Key.
+in SYSTEMPATH\Model.php on line 577.
+ 1 SYSTEMPATH\Model.php(577): CodeIgniter\Exceptions\ModelException::forNoPrimaryKey('App\\Models\\UangKasModel')
+ 2 SYSTEMPATH\Model.php(236): CodeIgniter\Model->builder()
+ 3 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Kas\KasController.php(22): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->getUangKas()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 03:03:22 --> `App\Models\UangKasModel` model class does not specify a Primary Key.
+in SYSTEMPATH\Model.php on line 577.
+ 1 SYSTEMPATH\Model.php(577): CodeIgniter\Exceptions\ModelException::forNoPrimaryKey('App\\Models\\UangKasModel')
+ 2 SYSTEMPATH\Model.php(236): CodeIgniter\Model->builder()
+ 3 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Kas\KasController.php(22): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->getUangKas()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2025-05-21 03:07:51 --> mysqli_sql_exception: Unknown column 'jumlah' in 'field list' in C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_uan...', 0)
+#1 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_uan...')
+#2 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_uan...')
+#3 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_uan...', Array, false)
+#4 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\BaseModel.php(886): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Model.php(693): CodeIgniter\BaseModel->update(NULL, Array)
+#7 C:\Data\Job\Job1\job11\app\Controllers\Kas\KasController.php(70): CodeIgniter\Model->update()
+#8 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Kas\KasController->tambahKas()
+#9 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+#10 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Data\Job\Job1\job11\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Data\\Job\\Job...')
+#13 {main}
+CRITICAL - 2025-05-21 03:07:51 --> Unknown column 'jumlah' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_uang_kas` SET `jumlah` = 100000
+WHERE 1 = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_uang_kas` SET `jumlah` = 100000
+WHERE 1 = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_uang_kas` SET `jumlah` = 100000
+WHERE 1 = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_uang_kas` SET `jumlah` = :jumlah:
+WHERE 1 = 1', [...], false)
+ 5 SYSTEMPATH\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(886): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH\Controllers\Kas\KasController.php(70): CodeIgniter\Model->update()
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->tambahKas()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2025-05-21 03:09:08 --> mysqli_sql_exception: Unknown column 'jumlah' in 'field list' in C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_uan...', 0)
+#1 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_uan...')
+#2 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_uan...')
+#3 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_uan...', Array, false)
+#4 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\BaseModel.php(886): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Model.php(693): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\Data\Job\Job1\job11\app\Controllers\Kas\KasController.php(69): CodeIgniter\Model->update(1, Array)
+#8 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Kas\KasController->tambahKas()
+#9 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+#10 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Data\Job\Job1\job11\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Data\\Job\\Job...')
+#13 {main}
+CRITICAL - 2025-05-21 03:09:08 --> Unknown column 'jumlah' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_uang_kas` SET `jumlah` = 100000
+WHERE `tbl_uang_kas`.`id` IN (1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_uang_kas` SET `jumlah` = 100000
+WHERE `tbl_uang_kas`.`id` IN (1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_uang_kas` SET `jumlah` = 100000
+WHERE `tbl_uang_kas`.`id` IN (1)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_uang_kas` SET `jumlah` = :jumlah:
+WHERE `tbl_uang_kas`.`id` IN :tbl_uang_kas.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(886): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Kas\KasController.php(69): CodeIgniter\Model->update(1, [...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->tambahKas()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2025-05-21 03:09:48 --> mysqli_sql_exception: Unknown column 'jumlah' in 'field list' in C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_uan...', 0)
+#1 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_uan...')
+#2 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_uan...')
+#3 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_uan...', Array, false)
+#4 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\BaseModel.php(886): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Model.php(693): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\Data\Job\Job1\job11\app\Controllers\Kas\KasController.php(69): CodeIgniter\Model->update(1, Array)
+#8 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Kas\KasController->tambahKas()
+#9 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+#10 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Data\Job\Job1\job11\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Data\\Job\\Job...')
+#13 {main}
+CRITICAL - 2025-05-21 03:09:48 --> Unknown column 'jumlah' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_uang_kas` SET `jumlah` = 100000
+WHERE `tbl_uang_kas`.`id` IN (1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_uang_kas` SET `jumlah` = 100000
+WHERE `tbl_uang_kas`.`id` IN (1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_uang_kas` SET `jumlah` = 100000
+WHERE `tbl_uang_kas`.`id` IN (1)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_uang_kas` SET `jumlah` = :jumlah:
+WHERE `tbl_uang_kas`.`id` IN :tbl_uang_kas.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(886): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Kas\KasController.php(69): CodeIgniter\Model->update(1, [...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->tambahKas()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 03:47:56 --> Invalid file: page/kas/pemasukan.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('page/kas/pemasukan.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('page/kas/pemasukan', [], true)
+ 3 APPPATH\Controllers\Kas\KasController.php(111): view('page/kas/pemasukan')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->pemasukanView()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 03:54:13 --> Invalid file: ../../Views/kas/pemasukan.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('../../Views/kas/pemasukan.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('../../Views/kas/pemasukan', [], true)
+ 3 APPPATH\Controllers\Kas\KasController.php(111): view('../../Views/kas/pemasukan')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->pemasukanView()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 03:55:15 --> Undefined variable $title
+in APPPATH\Views\layout\breadcrumbs.php on line 5.
+ 1 APPPATH\Views\layout\breadcrumbs.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\layout\\breadcrumbs.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\breadcrumbs.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/breadcrumbs', null, true)
+ 5 APPPATH\Views\kas\pemasukan.php(7): CodeIgniter\View\View->include('layout/breadcrumbs')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pemasukan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(111): view('kas/pemasukan')
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->pemasukanView()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 03:57:51 --> Undefined variable $title
+in APPPATH\Views\layout\breadcrumbs.php on line 5.
+ 1 APPPATH\Views\layout\breadcrumbs.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\layout\\breadcrumbs.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\breadcrumbs.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/breadcrumbs', null, true)
+ 5 APPPATH\Views\kas\pemasukan.php(7): CodeIgniter\View\View->include('layout/breadcrumbs')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pemasukan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(111): view('kas/pemasukan')
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->pemasukanView()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 03:57:52 --> Undefined variable $title
+in APPPATH\Views\layout\breadcrumbs.php on line 5.
+ 1 APPPATH\Views\layout\breadcrumbs.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\layout\\breadcrumbs.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\breadcrumbs.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/breadcrumbs', null, true)
+ 5 APPPATH\Views\kas\pemasukan.php(7): CodeIgniter\View\View->include('layout/breadcrumbs')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pemasukan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(111): view('kas/pemasukan')
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->pemasukanView()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 03:57:53 --> Undefined variable $title
+in APPPATH\Views\layout\breadcrumbs.php on line 5.
+ 1 APPPATH\Views\layout\breadcrumbs.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\layout\\breadcrumbs.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\breadcrumbs.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/breadcrumbs', null, true)
+ 5 APPPATH\Views\kas\pemasukan.php(7): CodeIgniter\View\View->include('layout/breadcrumbs')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pemasukan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(111): view('kas/pemasukan')
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->pemasukanView()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 03:57:53 --> Undefined variable $title
+in APPPATH\Views\layout\breadcrumbs.php on line 5.
+ 1 APPPATH\Views\layout\breadcrumbs.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\layout\\breadcrumbs.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\breadcrumbs.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/breadcrumbs', null, true)
+ 5 APPPATH\Views\kas\pemasukan.php(7): CodeIgniter\View\View->include('layout/breadcrumbs')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pemasukan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(111): view('kas/pemasukan')
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->pemasukanView()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 03:57:53 --> Undefined variable $title
+in APPPATH\Views\layout\breadcrumbs.php on line 5.
+ 1 APPPATH\Views\layout\breadcrumbs.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\layout\\breadcrumbs.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\breadcrumbs.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/breadcrumbs', null, true)
+ 5 APPPATH\Views\kas\pemasukan.php(7): CodeIgniter\View\View->include('layout/breadcrumbs')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pemasukan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(111): view('kas/pemasukan')
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->pemasukanView()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 03:57:56 --> Undefined variable $title
+in APPPATH\Views\layout\breadcrumbs.php on line 5.
+ 1 APPPATH\Views\layout\breadcrumbs.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\layout\\breadcrumbs.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\breadcrumbs.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/breadcrumbs', null, true)
+ 5 APPPATH\Views\kas\pemasukan.php(7): CodeIgniter\View\View->include('layout/breadcrumbs')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pemasukan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(111): view('kas/pemasukan')
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->pemasukanView()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 03:58:23 --> Undefined variable $title
+in APPPATH\Views\layout\breadcrumbs.php on line 5.
+ 1 APPPATH\Views\layout\breadcrumbs.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\layout\\breadcrumbs.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\breadcrumbs.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/breadcrumbs', null, true)
+ 5 APPPATH\Views\kas\pemasukan.php(7): CodeIgniter\View\View->include('layout/breadcrumbs')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pemasukan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(111): view('kas/pemasukan')
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->pemasukanView()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 03:58:24 --> Undefined variable $title
+in APPPATH\Views\layout\breadcrumbs.php on line 5.
+ 1 APPPATH\Views\layout\breadcrumbs.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\layout\\breadcrumbs.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\breadcrumbs.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/breadcrumbs', null, true)
+ 5 APPPATH\Views\kas\pemasukan.php(7): CodeIgniter\View\View->include('layout/breadcrumbs')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pemasukan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(111): view('kas/pemasukan')
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->pemasukanView()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 03:58:24 --> Undefined variable $title
+in APPPATH\Views\layout\breadcrumbs.php on line 5.
+ 1 APPPATH\Views\layout\breadcrumbs.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\layout\\breadcrumbs.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\breadcrumbs.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/breadcrumbs', null, true)
+ 5 APPPATH\Views\kas\pemasukan.php(7): CodeIgniter\View\View->include('layout/breadcrumbs')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pemasukan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(111): view('kas/pemasukan')
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->pemasukanView()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 03:59:18 --> Undefined variable $site
+in APPPATH\Views\layout\header.php on line 8.
+ 1 APPPATH\Views\layout\header.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $site', 'APPPATH\\Views\\layout\\header.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/header', null, true)
+ 5 APPPATH\Views\layout\template-home.php(1): CodeIgniter\View\View->include('layout/header')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\template-home.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/template-home', [], true)
+ 9 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+10 APPPATH\Controllers\Kas\KasController.php(111): view('kas/pemasukan', [...])
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->pemasukanView()
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 03:59:19 --> Undefined variable $site
+in APPPATH\Views\layout\header.php on line 8.
+ 1 APPPATH\Views\layout\header.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $site', 'APPPATH\\Views\\layout\\header.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/header', null, true)
+ 5 APPPATH\Views\layout\template-home.php(1): CodeIgniter\View\View->include('layout/header')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\template-home.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/template-home', [], true)
+ 9 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+10 APPPATH\Controllers\Kas\KasController.php(111): view('kas/pemasukan', [...])
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->pemasukanView()
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 03:59:45 --> Cannot access offset of type string on string
+in APPPATH\Views\layout\header.php on line 8.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/header', null, true)
+ 4 APPPATH\Views\layout\template-home.php(1): CodeIgniter\View\View->include('layout/header')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\template-home.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/template-home', [], true)
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(115): view('kas/pemasukan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->pemasukanView()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 04:00:28 --> Cannot access offset of type string on string
+in APPPATH\Views\layout\header.php on line 8.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/header', null, true)
+ 4 APPPATH\Views\layout\template-home.php(1): CodeIgniter\View\View->include('layout/header')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\template-home.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/template-home', [], true)
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(115): view('kas/pemasukan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->pemasukanView()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 04:00:29 --> Cannot access offset of type string on string
+in APPPATH\Views\layout\header.php on line 8.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/header', null, true)
+ 4 APPPATH\Views\layout\template-home.php(1): CodeIgniter\View\View->include('layout/header')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\template-home.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/template-home', [], true)
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(115): view('kas/pemasukan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->pemasukanView()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 04:00:29 --> Cannot access offset of type string on string
+in APPPATH\Views\layout\header.php on line 8.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/header', null, true)
+ 4 APPPATH\Views\layout\template-home.php(1): CodeIgniter\View\View->include('layout/header')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\template-home.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/template-home', [], true)
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(115): view('kas/pemasukan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->pemasukanView()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 04:00:30 --> Cannot access offset of type string on string
+in APPPATH\Views\layout\header.php on line 8.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/header', null, true)
+ 4 APPPATH\Views\layout\template-home.php(1): CodeIgniter\View\View->include('layout/header')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\template-home.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/template-home', [], true)
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(115): view('kas/pemasukan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->pemasukanView()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 04:00:30 --> Cannot access offset of type string on string
+in APPPATH\Views\layout\header.php on line 8.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/header', null, true)
+ 4 APPPATH\Views\layout\template-home.php(1): CodeIgniter\View\View->include('layout/header')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\template-home.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/template-home', [], true)
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(115): view('kas/pemasukan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->pemasukanView()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 04:00:42 --> Cannot access offset of type string on string
+in APPPATH\Views\layout\header.php on line 8.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/header', null, true)
+ 4 APPPATH\Views\layout\template-home.php(1): CodeIgniter\View\View->include('layout/header')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\template-home.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/template-home', [], true)
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(115): view('kas/pemasukan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->pemasukanView()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 04:00:43 --> Cannot access offset of type string on string
+in APPPATH\Views\layout\header.php on line 8.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/header', null, true)
+ 4 APPPATH\Views\layout\template-home.php(1): CodeIgniter\View\View->include('layout/header')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\template-home.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/template-home', [], true)
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(115): view('kas/pemasukan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->pemasukanView()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 04:00:43 --> Cannot access offset of type string on string
+in APPPATH\Views\layout\header.php on line 8.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/header', null, true)
+ 4 APPPATH\Views\layout\template-home.php(1): CodeIgniter\View\View->include('layout/header')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\template-home.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/template-home', [], true)
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(115): view('kas/pemasukan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->pemasukanView()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 04:00:44 --> Cannot access offset of type string on string
+in APPPATH\Views\layout\header.php on line 8.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/header', null, true)
+ 4 APPPATH\Views\layout\template-home.php(1): CodeIgniter\View\View->include('layout/header')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\template-home.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/template-home', [], true)
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(115): view('kas/pemasukan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->pemasukanView()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 04:23:35 --> Undefined variable $total_inbox
+in APPPATH\Views\layout\sidebar-dashboard.php on line 21.
+ 1 APPPATH\Views\layout\sidebar-dashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_inbox', 'APPPATH\\Views\\layout\\sidebar-dashboard.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\sidebar-dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/sidebar-dashboard', null, true)
+ 5 APPPATH\Views\kas\pemasukan.php(19): CodeIgniter\View\View->include('layout/sidebar-dashboard')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pemasukan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(162): view('kas/pemasukan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPemasukan()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 06:07:16 --> Undefined variable $total_inbox
+in APPPATH\Views\layout\sidebar-dashboard.php on line 21.
+ 1 APPPATH\Views\layout\sidebar-dashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_inbox', 'APPPATH\\Views\\layout\\sidebar-dashboard.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\sidebar-dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/sidebar-dashboard', null, true)
+ 5 APPPATH\Views\kas\pemasukan.php(23): CodeIgniter\View\View->include('layout/sidebar-dashboard')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pemasukan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(119): view('kas/pemasukan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPemasukan()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 06:09:21 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\layout\title-dashboard.php on line 5.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/title-dashboard', null, true)
+ 4 APPPATH\Views\kas\pemasukan.php(28): CodeIgniter\View\View->include('layout/title-dashboard')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pemasukan.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 8 APPPATH\Controllers\Kas\KasController.php(119): view('kas/pemasukan', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPemasukan()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 06:13:18 --> Undefined variable $related_post
+in APPPATH\Views\kas\pemasukan.php on line 38.
+ 1 APPPATH\Views\kas\pemasukan.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $related_post', 'APPPATH\\Views\\kas\\pemasukan.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pemasukan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 5 APPPATH\Controllers\Kas\KasController.php(119): view('kas/pemasukan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPemasukan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 06:18:57 --> Undefined variable $related_post
+in APPPATH\Views\kas\pemasukan.php on line 38.
+ 1 APPPATH\Views\kas\pemasukan.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $related_post', 'APPPATH\\Views\\kas\\pemasukan.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pemasukan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 5 APPPATH\Controllers\Kas\KasController.php(119): view('kas/pemasukan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPemasukan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 06:19:16 --> Undefined variable $related_post
+in APPPATH\Views\kas\pemasukan.php on line 38.
+ 1 APPPATH\Views\kas\pemasukan.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $related_post', 'APPPATH\\Views\\kas\\pemasukan.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pemasukan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 5 APPPATH\Controllers\Kas\KasController.php(119): view('kas/pemasukan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPemasukan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 06:19:21 --> Undefined variable $related_post
+in APPPATH\Views\kas\pemasukan.php on line 38.
+ 1 APPPATH\Views\kas\pemasukan.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $related_post', 'APPPATH\\Views\\kas\\pemasukan.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pemasukan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 5 APPPATH\Controllers\Kas\KasController.php(119): view('kas/pemasukan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPemasukan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 06:19:22 --> Undefined variable $related_post
+in APPPATH\Views\kas\pemasukan.php on line 38.
+ 1 APPPATH\Views\kas\pemasukan.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $related_post', 'APPPATH\\Views\\kas\\pemasukan.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pemasukan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 5 APPPATH\Controllers\Kas\KasController.php(119): view('kas/pemasukan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPemasukan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 06:22:42 --> Undefined variable $total_inbox
+in APPPATH\Views\layout\sidebar-dashboard.php on line 21.
+ 1 APPPATH\Views\layout\sidebar-dashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_inbox', 'APPPATH\\Views\\layout\\sidebar-dashboard.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\sidebar-dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/sidebar-dashboard', null, true)
+ 5 APPPATH\Views\kas\pemasukan.php(39): CodeIgniter\View\View->include('layout/sidebar-dashboard')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pemasukan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(119): view('kas/pemasukan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPemasukan()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 06:24:29 --> Undefined variable $total_inbox
+in APPPATH\Views\layout\sidebar-dashboard.php on line 21.
+ 1 APPPATH\Views\layout\sidebar-dashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_inbox', 'APPPATH\\Views\\layout\\sidebar-dashboard.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\sidebar-dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/sidebar-dashboard', null, true)
+ 5 APPPATH\Views\kas\pemasukan.php(43): CodeIgniter\View\View->include('layout/sidebar-dashboard')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pemasukan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(119): view('kas/pemasukan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPemasukan()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 06:24:48 --> Undefined variable $total_inbox
+in APPPATH\Views\layout\sidebar-dashboard.php on line 21.
+ 1 APPPATH\Views\layout\sidebar-dashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_inbox', 'APPPATH\\Views\\layout\\sidebar-dashboard.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\sidebar-dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/sidebar-dashboard', null, true)
+ 5 APPPATH\Views\kas\pemasukan.php(43): CodeIgniter\View\View->include('layout/sidebar-dashboard')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pemasukan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(119): view('kas/pemasukan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPemasukan()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 06:29:36 --> Undefined variable $total_inbox
+in APPPATH\Views\layout\sidebar-dashboard.php on line 21.
+ 1 APPPATH\Views\layout\sidebar-dashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_inbox', 'APPPATH\\Views\\layout\\sidebar-dashboard.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\sidebar-dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/sidebar-dashboard', null, true)
+ 5 APPPATH\Views\kas\pemasukan.php(41): CodeIgniter\View\View->include('layout/sidebar-dashboard')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pemasukan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(119): view('kas/pemasukan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPemasukan()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 06:30:16 --> Undefined variable $total_inbox
+in APPPATH\Views\layout\sidebar-dashboard.php on line 21.
+ 1 APPPATH\Views\layout\sidebar-dashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_inbox', 'APPPATH\\Views\\layout\\sidebar-dashboard.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\sidebar-dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/sidebar-dashboard', null, true)
+ 5 APPPATH\Views\kas\pemasukan.php(1): CodeIgniter\View\View->include('layout/sidebar-dashboard')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pemasukan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(119): view('kas/pemasukan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPemasukan()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 06:32:27 --> Undefined variable $title
+in APPPATH\Controllers\Kas\KasController.php on line 5.
+ 1 APPPATH\Controllers\Kas\KasController.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Controllers\\Kas\\KasController.php', 5)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(282): include_once('APPPATH\\Controllers\\Kas\\KasController.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Kas\\KasController.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Kas\\KasController')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Kas\\KasController')
+ 6 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Kas\\KasController', true)
+ 7 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 06:33:07 --> Undefined variable $title
+in APPPATH\Controllers\Kas\KasController.php on line 5.
+ 1 APPPATH\Controllers\Kas\KasController.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Controllers\\Kas\\KasController.php', 5)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(282): include_once('APPPATH\\Controllers\\Kas\\KasController.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Kas\\KasController.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Kas\\KasController')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Kas\\KasController')
+ 6 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Kas\\KasController', true)
+ 7 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 06:33:13 --> Undefined variable $title
+in APPPATH\Controllers\Kas\KasController.php on line 5.
+ 1 APPPATH\Controllers\Kas\KasController.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Controllers\\Kas\\KasController.php', 5)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(282): include_once('APPPATH\\Controllers\\Kas\\KasController.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Kas\\KasController.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Kas\\KasController')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Kas\\KasController')
+ 6 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Kas\\KasController', true)
+ 7 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 06:34:12 --> Undefined variable $total_inbox
+in APPPATH\Views\layout\sidebar-dashboard.php on line 21.
+ 1 APPPATH\Views\layout\sidebar-dashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_inbox', 'APPPATH\\Views\\layout\\sidebar-dashboard.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\sidebar-dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/sidebar-dashboard', null, true)
+ 5 APPPATH\Views\kas\pemasukan.php(24): CodeIgniter\View\View->include('layout/sidebar-dashboard')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pemasukan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(119): view('kas/pemasukan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPemasukan()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 06:34:54 --> Undefined variable $inboxs
+in APPPATH\Views\layout\sidebar-dashboard.php on line 29.
+ 1 APPPATH\Views\layout\sidebar-dashboard.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $inboxs', 'APPPATH\\Views\\layout\\sidebar-dashboard.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\sidebar-dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/sidebar-dashboard', null, true)
+ 5 APPPATH\Views\kas\pemasukan.php(24): CodeIgniter\View\View->include('layout/sidebar-dashboard')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pemasukan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(124): view('kas/pemasukan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPemasukan()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2025-05-21 06:35:34 --> mysqli_sql_exception: Unknown column 'user_id' in 'where clause' in C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Data\Job\Job1\job11\app\Controllers\Kas\KasController.php(113): CodeIgniter\BaseModel->findAll()
+#7 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPemasukan()
+#8 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+#9 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Data\Job\Job1\job11\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Data\\Job\\Job...')
+#12 {main}
+CRITICAL - 2025-05-21 06:35:34 --> Unknown column 'user_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_inbox`
+WHERE `user_id` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_inbox`
+WHERE `user_id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_inbox`
+WHERE `user_id` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_inbox`
+WHERE `user_id` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Kas\KasController.php(113): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPemasukan()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 06:41:40 --> Class "App\Controllers\Kas\BaseController" not found
+in APPPATH\Controllers\Kas\KasController.php on line 12.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(282): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Kas\\KasController.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Kas\\KasController')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Kas\\KasController')
+ 5 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Kas\\KasController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 06:42:46 --> Class "App\Controllers\Kas\BaseController" not found
+in APPPATH\Controllers\Kas\KasController.php on line 12.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(282): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Kas\\KasController.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Kas\\KasController')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Kas\\KasController')
+ 5 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Kas\\KasController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2025-05-21 06:43:46 --> mysqli_sql_exception: Unknown column 'user_id' in 'where clause' in C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(5, 0)
+#6 C:\Data\Job\Job1\job11\app\Controllers\Kas\KasController.php(134): CodeIgniter\BaseModel->findAll(5)
+#7 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPemasukan()
+#8 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+#9 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Data\Job\Job1\job11\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Data\\Job\\Job...')
+#12 {main}
+CRITICAL - 2025-05-21 06:43:46 --> Unknown column 'user_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_comment`
+WHERE `user_id` IS NULL
+ORDER BY `comment_date` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_comment`
+WHERE `user_id` IS NULL
+ORDER BY `comment_date` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_comment`
+WHERE `user_id` IS NULL
+ORDER BY `comment_date` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_comment`
+WHERE `user_id` IS NULL
+ORDER BY `comment_date` DESC
+ LIMIT 5', [], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(5, 0)
+ 7 APPPATH\Controllers\Kas\KasController.php(134): CodeIgniter\BaseModel->findAll(5)
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPemasukan()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 06:44:33 --> Undefined variable $total_inbox
+in APPPATH\Views\layout\sidebar-dashboard.php on line 21.
+ 1 APPPATH\Views\layout\sidebar-dashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_inbox', 'APPPATH\\Views\\layout\\sidebar-dashboard.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\sidebar-dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/sidebar-dashboard', null, true)
+ 5 APPPATH\Views\kas\pemasukan.php(1): CodeIgniter\View\View->include('layout/sidebar-dashboard')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pemasukan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(119): view('kas/pemasukan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPemasukan()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 06:44:53 --> Undefined variable $total_inbox
+in APPPATH\Views\layout\sidebar-dashboard.php on line 21.
+ 1 APPPATH\Views\layout\sidebar-dashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_inbox', 'APPPATH\\Views\\layout\\sidebar-dashboard.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\sidebar-dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/sidebar-dashboard', null, true)
+ 5 APPPATH\Views\kas\pemasukan.php(23): CodeIgniter\View\View->include('layout/sidebar-dashboard')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pemasukan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(119): view('kas/pemasukan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPemasukan()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 06:46:59 --> Undefined variable $total_inbox
+in APPPATH\Views\layout\sidebar-dashboard.php on line 21.
+ 1 APPPATH\Views\layout\sidebar-dashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_inbox', 'APPPATH\\Views\\layout\\sidebar-dashboard.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\sidebar-dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/sidebar-dashboard', null, true)
+ 5 APPPATH\Views\kas\pemasukan.php(22): CodeIgniter\View\View->include('layout/sidebar-dashboard')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pemasukan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(119): view('kas/pemasukan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPemasukan()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 06:48:53 --> Undefined variable $inboxs
+in APPPATH\Views\layout\sidebar-dashboard.php on line 29.
+ 1 APPPATH\Views\layout\sidebar-dashboard.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $inboxs', 'APPPATH\\Views\\layout\\sidebar-dashboard.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\sidebar-dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/sidebar-dashboard', null, true)
+ 5 APPPATH\Views\kas\pemasukan.php(22): CodeIgniter\View\View->include('layout/sidebar-dashboard')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pemasukan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(120): view('kas/pemasukan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPemasukan()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 06:50:16 --> Undefined array key "inbox_id"
+in APPPATH\Views\layout\sidebar-dashboard.php on line 31.
+ 1 APPPATH\Views\layout\sidebar-dashboard.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "inbox_id"', 'APPPATH\\Views\\layout\\sidebar-dashboard.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\sidebar-dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/sidebar-dashboard', null, true)
+ 5 APPPATH\Views\kas\pemasukan.php(22): CodeIgniter\View\View->include('layout/sidebar-dashboard')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pemasukan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(129): view('kas/pemasukan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPemasukan()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 06:51:08 --> Undefined array key "inbox_id"
+in APPPATH\Views\layout\sidebar-dashboard.php on line 31.
+ 1 APPPATH\Views\layout\sidebar-dashboard.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "inbox_id"', 'APPPATH\\Views\\layout\\sidebar-dashboard.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\sidebar-dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/sidebar-dashboard', null, true)
+ 5 APPPATH\Views\kas\pemasukan.php(22): CodeIgniter\View\View->include('layout/sidebar-dashboard')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pemasukan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(129): view('kas/pemasukan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPemasukan()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 06:51:10 --> Undefined array key "inbox_id"
+in APPPATH\Views\layout\sidebar-dashboard.php on line 31.
+ 1 APPPATH\Views\layout\sidebar-dashboard.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "inbox_id"', 'APPPATH\\Views\\layout\\sidebar-dashboard.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\sidebar-dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/sidebar-dashboard', null, true)
+ 5 APPPATH\Views\kas\pemasukan.php(22): CodeIgniter\View\View->include('layout/sidebar-dashboard')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pemasukan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(129): view('kas/pemasukan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPemasukan()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 06:52:30 --> Undefined array key "inbox_id"
+in APPPATH\Views\layout\sidebar-dashboard.php on line 31.
+ 1 APPPATH\Views\layout\sidebar-dashboard.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "inbox_id"', 'APPPATH\\Views\\layout\\sidebar-dashboard.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\sidebar-dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/sidebar-dashboard', null, true)
+ 5 APPPATH\Views\kas\pemasukan.php(22): CodeIgniter\View\View->include('layout/sidebar-dashboard')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pemasukan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(129): view('kas/pemasukan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPemasukan()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 06:55:05 --> Undefined array key "inbox_id"
+in APPPATH\Views\layout\sidebar-dashboard.php on line 31.
+ 1 APPPATH\Views\layout\sidebar-dashboard.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "inbox_id"', 'APPPATH\\Views\\layout\\sidebar-dashboard.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\sidebar-dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/sidebar-dashboard', null, true)
+ 5 APPPATH\Views\kas\pemasukan.php(22): CodeIgniter\View\View->include('layout/sidebar-dashboard')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pemasukan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(129): view('kas/pemasukan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPemasukan()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 06:55:08 --> Undefined array key "inbox_id"
+in APPPATH\Views\layout\sidebar-dashboard.php on line 31.
+ 1 APPPATH\Views\layout\sidebar-dashboard.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "inbox_id"', 'APPPATH\\Views\\layout\\sidebar-dashboard.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\sidebar-dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/sidebar-dashboard', null, true)
+ 5 APPPATH\Views\kas\pemasukan.php(22): CodeIgniter\View\View->include('layout/sidebar-dashboard')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pemasukan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(129): view('kas/pemasukan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPemasukan()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2025-05-21 19:57:03 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'newcli', 3306, '', 0)
+#1 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Data\Job\Job1\job11\app\Models\VisitorModel.php(15): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 C:\Data\Job\Job1\job11\app\Controllers\BaseController.php(67): App\Models\VisitorModel->count_visitor('::1', 'Edge 136.0.0.0')
+#5 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(890): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#6 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+#7 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Data\Job\Job1\job11\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Data\\Job\\Job...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Data\Job\Job1\job11\app\Models\VisitorModel.php(15): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#3 C:\Data\Job\Job1\job11\app\Controllers\BaseController.php(67): App\Models\VisitorModel->count_visitor('::1', 'Edge 136.0.0.0')
+#4 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(890): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+#6 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Data\Job\Job1\job11\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Data\\Job\\Job...')
+#9 {main}
+CRITICAL - 2025-05-21 19:57:03 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\VisitorModel.php(15): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_visitors WHERE visit_ip=\'::1\' AND DATE(visit_date)=CURDATE()')
+ 3 APPPATH\Controllers\BaseController.php(67): App\Models\VisitorModel->count_visitor('::1', 'Edge 136.0.0.0')
+ 4 SYSTEMPATH\CodeIgniter.php(890): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 5 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 19:57:42 --> Undefined property: App\Controllers\Kas\KasController::$active
+in APPPATH\Controllers\Kas\KasController.php on line 114.
+ 1 APPPATH\Controllers\Kas\KasController.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Kas\\KasController::$active', 'APPPATH\\Controllers\\Kas\\KasController.php', 114)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPemasukan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 20:02:19 --> Undefined property: App\Controllers\Kas\KasController::$active
+in APPPATH\Controllers\Kas\KasController.php on line 119.
+ 1 APPPATH\Controllers\Kas\KasController.php(119): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Kas\\KasController::$active', 'APPPATH\\Controllers\\Kas\\KasController.php', 119)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPemasukan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 20:02:37 --> Undefined property: App\Controllers\Kas\KasController::$inboxModel
+in APPPATH\Controllers\Kas\KasController.php on line 120.
+ 1 APPPATH\Controllers\Kas\KasController.php(120): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Kas\\KasController::$inboxModel', 'APPPATH\\Controllers\\Kas\\KasController.php', 120)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPemasukan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 20:03:26 --> Undefined property: App\Controllers\Kas\KasController::$active
+in APPPATH\Controllers\Kas\KasController.php on line 126.
+ 1 APPPATH\Controllers\Kas\KasController.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Kas\\KasController::$active', 'APPPATH\\Controllers\\Kas\\KasController.php', 126)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPemasukan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 20:03:33 --> Undefined variable $active
+in APPPATH\Views\layout\sidebar-dashboard.php on line 114.
+ 1 APPPATH\Views\layout\sidebar-dashboard.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $active', 'APPPATH\\Views\\layout\\sidebar-dashboard.php', 114)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\sidebar-dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/sidebar-dashboard', null, true)
+ 5 APPPATH\Views\kas\pemasukan.php(21): CodeIgniter\View\View->include('layout/sidebar-dashboard')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pemasukan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(136): view('kas/pemasukan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPemasukan()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 20:03:48 --> Undefined property: App\Controllers\Kas\KasController::$active
+in APPPATH\Controllers\Kas\KasController.php on line 126.
+ 1 APPPATH\Controllers\Kas\KasController.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Kas\\KasController::$active', 'APPPATH\\Controllers\\Kas\\KasController.php', 126)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPemasukan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 20:13:02 --> Undefined variable $active
+in APPPATH\Views\layout\sidebar-dashboard.php on line 114.
+ 1 APPPATH\Views\layout\sidebar-dashboard.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $active', 'APPPATH\\Views\\layout\\sidebar-dashboard.php', 114)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\sidebar-dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/sidebar-dashboard', null, true)
+ 5 APPPATH\Views\kas\pemasukan.php(21): CodeIgniter\View\View->include('layout/sidebar-dashboard')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pemasukan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pemasukan', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(136): view('kas/pemasukan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPemasukan()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-21 22:50:47 --> Undefined variable $total_inbox
+in APPPATH\Views\layout\sidebar-dashboard.php on line 21.
+ 1 APPPATH\Views\layout\sidebar-dashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_inbox', 'APPPATH\\Views\\layout\\sidebar-dashboard.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\sidebar-dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layout/sidebar-dashboard', null, true)
+ 5 APPPATH\Views\kas\pengeluaran.php(40): CodeIgniter\View\View->include('layout/sidebar-dashboard')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pengeluaran.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pengeluaran', [], true)
+ 9 APPPATH\Controllers\Kas\KasController.php(150): view('kas/pengeluaran', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPengeluaran()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
