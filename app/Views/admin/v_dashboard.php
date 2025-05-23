@@ -199,6 +199,67 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-12 col-md-12">
+                        <div class="panel panel-white">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">Uang Kas dan Transaksi Terbaru</h4>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+
+                                    <!-- Uang Kas -->
+                                    <div class="col-md-4">
+                                        <div class="info-box info-box-success">
+                                            <div class="panel-body">
+                                                <div class="info-box-stats">
+                                                    <p class="counter"><?= number_format($uang_kas['jumlah']); ?></p>
+                                                    <span class="info-box-title">Uang Kas Saat Ini</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 3 Pemasukan Terakhir -->
+                                    <div class="col-md-4">
+                                        <div class="info-box-icon">
+                                                <i class="icon-arrow-up text-success"></i>
+                                        </div>
+                                        <h5><strong>Pemasukan Terakhir</strong></h5>
+                                        <ul class="list-unstyled">
+                                            <?php foreach (array_slice(array_reverse($transaksi_pemasukan), 0, 3) as $item): ?>
+                                                <li><?= $item['tanggal']; ?> - <?= $item['kategori']; ?>: <span class="text-success">+<?= number_format($item['jumlah']); ?></span></li>
+                                            <?php endforeach; ?>
+                                        </ul>
+                                    </div>
+
+                                    <!-- 3 Pengeluaran Terakhir -->
+                                    <div class="col-md-4">
+                                        <div class="info-box-icon">
+                                                <i class="icon-arrow-down text-danger"></i>
+                                        </div>
+                                        <h5><strong>Pengeluaran Terakhir</strong></h5>
+                                        <ul class="list-unstyled">
+                                            <?php if (count($transaksi_pengeluaran) == 0): ?>
+                                                <li><em>Tidak ada data</em></li>
+                                            <?php else: ?>
+                                                <?php foreach (array_slice(array_reverse($transaksi_pengeluaran), 0, 3) as $item): ?>
+                                                    <li><?= $item['tanggal']; ?> - <?= $item['kategori']; ?>: <span class="text-danger">-<?= number_format($item['jumlah']); ?></span></li>
+                                                <?php endforeach; ?>
+                                            <?php endif; ?>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- Chart -->
+                                <div class="row" style="margin-top:30px;">
+                                    <div class="col-md-12">
+                                        <h5><strong>Perbandingan Pemasukan vs Pengeluaran</strong></h5>
+                                        <canvas id="chartKas"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- End Main Content -->
@@ -233,13 +294,61 @@
     <script src="/assets/backend/plugins/flot/jquery.flot.tooltip.min.js"></script>
     <script src="/assets/backend/plugins/chartsjs/Chart.min.js"></script>
     <script src="/assets/backend/js/modern.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <script>
-        $(document).ready(function() {
+    const labels = <?= json_encode($chart_labels); ?>;
+    // Karena cuma 2 data, buat satu dataset saja
+    const data = <?= json_encode([$total_pemasukan, $total_pengeluaran]); ?>;
+
+    const ctx = document.getElementById('chartKas').getContext('2d');
+    const chartKas = new Chart(ctx, {
+        type: 'bar',
+        data: {
+        labels: labels,
+        datasets: [{
+            label: 'Jumlah (Rp)',
+            data: data,
+            backgroundColor: [
+            'rgba(54, 162, 235, 0.7)', // biru pemasukan
+            'rgba(255, 99, 132, 0.7)'  // merah pengeluaran
+            ],
+            borderColor: [
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 99, 132, 1)'
+            ],
+            borderWidth: 1
+        }]
+        },
+        options: {
+        scales: {
+            y: {
+            beginAtZero: true,
+            ticks: {
+                callback: value => value.toLocaleString()
+            }
+            }
+        },
+        plugins: {
+            legend: { display: false },
+            tooltip: {
+            callbacks: {
+                label: ctx => 'Rp ' + ctx.parsed.y.toLocaleString()
+            }
+            }
+        }
+        }
+    });
+    </script>
+
+    <script>
+        $(document).one('appear',function() {
             // CounterUp Plugin
             $('.counter').counterUp({
                 delay: 10,
                 time: 1000
             });
+
 
             var myLine = document.getElementById("canvas").getContext("2d");
             var lineChartData = {
@@ -280,6 +389,38 @@
                 responsive: true
             });
         });
+    </script>
+    <script>
+        $(document).ready(function() {
+            var ctx = document.getElementById('chartKas').getContext('2d');
+            var chartKas = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: <?= json_encode($chart_labels); ?>,
+                    datasets: [{
+                        label: 'Pemasukan',
+                        data: <?= json_encode($chart_pemasukan); ?>,
+                        backgroundColor: 'rgba(34,186,160,0.5)',
+                    }, {
+                        label: 'Pengeluaran',
+                        data: <?= json_encode($chart_pengeluaran); ?>,
+                        backgroundColor: 'rgba(255,99,132,0.5)',
+                    }]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    }
+                }
+            });
+        });
+    
+    
+    <script>
     </script>
 </body>
 

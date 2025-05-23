@@ -71,6 +71,16 @@
                             <div class="panel panel-white">
                                 <div class="panel-body">
 
+                                    <?php if (session()->getFlashdata('success')): ?>
+                                        <div class="alert alert-success alert-dismissible fade in" role="alert">
+                                            <?= session()->getFlashdata('success'); ?>
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                    <?php endif; ?>
+
+
                                     <h2 class="mb-1" style="margin-bottom:25px;">Pemasukan Kas</h2>
                                     <!-- Form Input -->
                                     <form id="form-tambah-kas" class="form-inline" method="post" action="tambah/data">
@@ -94,7 +104,7 @@
                                         <table id="kas-table" class="display table" style="width: 100%;">
                                             <thead>
                                                 <tr>
-                                                    <th>No</th>
+                                                    <th>Kode</th>
                                                     <th>Kategori</th>
                                                     <th>Jumlah</th>
                                                     <th>Tanggal</th>
@@ -105,18 +115,58 @@
                                             <tbody id="body-table">
                                                 <?php $no = 1; foreach ($kas_pemasukan as $kas): ?>
                                                 <tr>
-                                                    <td><?= $no++; ?></td>
+                                                    <td><?= $kas['kode_kas']; ?></td>
                                                     <td><?= $kas['kategori']; ?></td>
                                                     <td><?= number_format($kas['jumlah']); ?></td>
                                                     <td><?= date('d-m-Y', strtotime($kas['tanggal'])); ?></td>
                                                     <td><?= $kas['user_id']; ?></td>
+
                                                     <td style="text-align: center;">
-                                                        <!-- action buttons here -->
+                                                                                                            <!-- Button Edit (Modal Trigger) -->
+                                                        <button class="btn btn-warning btn-sm" data-toggle="modal" data-target="#editModal<?= $kas['kode_kas']; ?>">
+                                                            Edit
+                                                        </button>
+
+                                                        <!-- Button Delete -->
+                                                        <a href="/kas/pemasukan/delete/<?= $kas['kode_kas']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin ingin menghapus data ini?')">
+                                                            Delete
+                                                        </a>
                                                     </td>
+                                                    
                                                 </tr>
                                                 <?php endforeach; ?>
                                             </tbody>
                                         </table>
+                                        <?php foreach ($kas_pemasukan as $kas): ?>
+                                            <div class="modal fade" id="editModal<?= $kas['kode_kas']; ?>" tabindex="-1" role="dialog" aria-labelledby="editModalLabel<?= $kas['kode_kas']; ?>" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <form action="/kas/pemasukan/edit/<?= $kas['kode_kas']; ?>" method="post">
+                                                <?= csrf_field(); ?>
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                    <h5 class="modal-title" id="editModalLabel<?= $kas['kode_kas']; ?>">Edit Data Kas</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                    <div class="form-group">
+                                                        <label>Kategori</label>
+                                                        <input type="text" name="kategori" class="form-control" value="<?= $kas['kategori']; ?>" required />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Jumlah</label>
+                                                        <input type="number" name="jumlah" class="form-control" value="<?= $kas['jumlah']; ?>" required />
+                                                    </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                    <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
+                                                    </div>
+                                                </div>
+                                                </form>
+                                            </div>
+                                            </div>
+                                        <?php endforeach; ?>
 
                                     </div>
 

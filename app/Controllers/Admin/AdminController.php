@@ -6,6 +6,8 @@ use App\Controllers\BaseController;
 use App\Models\CommentModel;
 use App\Models\InboxModel;
 use App\Models\VisitorModel;
+use App\Models\UangKasModel;
+use App\Models\TransaksiKasModel;
 
 class AdminController extends BaseController
 {
@@ -15,6 +17,8 @@ class AdminController extends BaseController
         $this->commentModel = new CommentModel();
 
         $this->visitorModel = new VisitorModel();
+        $this->uangModel = new UangKasModel();
+        $this->transaksiModel = new TransaksiKasModel();
     }
     public function index()
     {
@@ -86,6 +90,29 @@ class AdminController extends BaseController
             $other_visitor = 0;
         }
 
+        $uang_kas = $this->uangModel->first();
+        $transaksi = $this->transaksiModel->findAll();
+
+        // Pisahkan transaksi
+        $transaksi_pemasukan = array_filter($transaksi, fn($t) => $t['jenis'] == 'pemasukan');
+        $transaksi_pengeluaran = array_filter($transaksi, fn($t) => $t['jenis'] == 'pengeluaran');
+
+        // Hitung chart per tanggal
+        $tanggal_unik = array_unique(array_column($transaksi, 'tanggal'));
+        sort($tanggal_unik);
+
+         // Hitung total pemasukan dan pengeluaran
+        $total_pemasukan = array_sum(array_map(fn($t) => $t['jenis'] == 'pemasukan' ? (int)$t['jumlah'] : 0, $transaksi));
+        $total_pengeluaran = array_sum(array_map(fn($t) => $t['jenis'] == 'pengeluaran' ? (int)$t['jumlah'] : 0, $transaksi));
+
+        // Siapkan data untuk chart (bisa label 2 item saja)
+        $chart_labels = ['Pemasukan', 'Pengeluaran'];
+        $chart_pemasukan = [$total_pemasukan];
+        $chart_pengeluaran = [$total_pengeluaran];
+
+        // Atau langsung buat dataset jadi satu array saja
+        $chart_data = [$total_pemasukan, $total_pengeluaran];
+
         $data = [
             'akun' => $this->akun,
             'title' => 'Dashboard',
@@ -110,7 +137,15 @@ class AdminController extends BaseController
             'safari_visitor' => $safari_visitor,
             'opera_visitor' => $opera_visitor,
             'robot_visitor' => $robot_visitor,
-            'other_visitor' => $other_visitor
+            'other_visitor' => $other_visitor,
+            'uang_kas' => $uang_kas,
+            'transaksi_pemasukan' => $transaksi_pemasukan,
+            'transaksi_pengeluaran' => $transaksi_pengeluaran,
+            'chart_labels' => $chart_labels,
+            'chart_pemasukan' => $chart_pemasukan,
+            'chart_pengeluaran' => $chart_pengeluaran,
+            'total_pemasukan' => $total_pemasukan,
+            'total_pengeluaran' => $total_pengeluaran,
         ];
 
         return view('admin/v_dashboard', $data);

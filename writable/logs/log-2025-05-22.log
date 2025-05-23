@@ -142,3 +142,341 @@ in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
 11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
 13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2025-05-22 20:13:56 --> mysqli_sql_exception: MySQL server has gone away in C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 C:\Data\Job\Job1\job11\app\Controllers\LoginController.php(38): CodeIgniter\BaseModel->first()
+#7 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\LoginController->validasi()
+#8 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#9 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Data\Job\Job1\job11\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Data\\Job\\Job...')
+#12 {main}
+CRITICAL - 2025-05-22 20:13:56 --> MySQL server has gone away
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_user`
+WHERE `user_email` = \'admin@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_user`
+WHERE `user_email` = \'admin@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_user`
+WHERE `user_email` = \'admin@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_user`
+WHERE `user_email` = :user_email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\LoginController.php(38): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->validasi()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-22 20:22:50 --> Class "App\Controllers\Admin\UangKasModel" not found
+in APPPATH\Controllers\Admin\AdminController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Admin\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-22 20:29:18 --> Call to undefined function App\Controllers\Admin\console_log()
+in APPPATH\Controllers\Admin\AdminController.php on line 120.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin\AdminController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-22 20:45:23 --> Undefined variable $kas
+in APPPATH\Views\admin\v_dashboard.php on line 206.
+ 1 APPPATH\Views\admin\v_dashboard.php(206): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kas', 'APPPATH\\Views\\admin\\v_dashboard.php', 206)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\v_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/v_dashboard', [], true)
+ 5 APPPATH\Controllers\Admin\AdminController.php(148): view('admin/v_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-22 20:47:58 --> Undefined variable $bulan
+in APPPATH\Views\admin\v_dashboard.php on line 378.
+ 1 APPPATH\Views\admin\v_dashboard.php(378): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bulan', 'APPPATH\\Views\\admin\\v_dashboard.php', 378)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\v_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/v_dashboard', [], true)
+ 5 APPPATH\Controllers\Admin\AdminController.php(148): view('admin/v_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-22 20:48:44 --> Undefined variable $pemasukan
+in APPPATH\Views\admin\v_dashboard.php on line 381.
+ 1 APPPATH\Views\admin\v_dashboard.php(381): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pemasukan', 'APPPATH\\Views\\admin\\v_dashboard.php', 381)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\v_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/v_dashboard', [], true)
+ 5 APPPATH\Controllers\Admin\AdminController.php(148): view('admin/v_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-22 20:49:02 --> Array to string conversion
+in APPPATH\Views\admin\v_dashboard.php on line 381.
+ 1 APPPATH\Views\admin\v_dashboard.php(381): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\admin\\v_dashboard.php', 381)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\v_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/v_dashboard', [], true)
+ 5 APPPATH\Controllers\Admin\AdminController.php(148): view('admin/v_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-22 20:49:27 --> Array to string conversion
+in APPPATH\Views\admin\v_dashboard.php on line 381.
+ 1 APPPATH\Views\admin\v_dashboard.php(381): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\admin\\v_dashboard.php', 381)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\v_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/v_dashboard', [], true)
+ 5 APPPATH\Controllers\Admin\AdminController.php(148): view('admin/v_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-22 20:49:28 --> Array to string conversion
+in APPPATH\Views\admin\v_dashboard.php on line 381.
+ 1 APPPATH\Views\admin\v_dashboard.php(381): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\admin\\v_dashboard.php', 381)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\v_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/v_dashboard', [], true)
+ 5 APPPATH\Controllers\Admin\AdminController.php(148): view('admin/v_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-22 20:49:28 --> Array to string conversion
+in APPPATH\Views\admin\v_dashboard.php on line 381.
+ 1 APPPATH\Views\admin\v_dashboard.php(381): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\admin\\v_dashboard.php', 381)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\v_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/v_dashboard', [], true)
+ 5 APPPATH\Controllers\Admin\AdminController.php(148): view('admin/v_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-22 20:50:34 --> Array to string conversion
+in APPPATH\Views\admin\v_dashboard.php on line 381.
+ 1 APPPATH\Views\admin\v_dashboard.php(381): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\admin\\v_dashboard.php', 381)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\v_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/v_dashboard', [], true)
+ 5 APPPATH\Controllers\Admin\AdminController.php(148): view('admin/v_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-22 20:50:35 --> Array to string conversion
+in APPPATH\Views\admin\v_dashboard.php on line 381.
+ 1 APPPATH\Views\admin\v_dashboard.php(381): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\admin\\v_dashboard.php', 381)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\v_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/v_dashboard', [], true)
+ 5 APPPATH\Controllers\Admin\AdminController.php(148): view('admin/v_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-22 20:50:35 --> Array to string conversion
+in APPPATH\Views\admin\v_dashboard.php on line 381.
+ 1 APPPATH\Views\admin\v_dashboard.php(381): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\admin\\v_dashboard.php', 381)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\v_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/v_dashboard', [], true)
+ 5 APPPATH\Controllers\Admin\AdminController.php(148): view('admin/v_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-22 20:51:27 --> Undefined variable $pengeluaran
+in APPPATH\Views\admin\v_dashboard.php on line 390.
+ 1 APPPATH\Views\admin\v_dashboard.php(390): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengeluaran', 'APPPATH\\Views\\admin\\v_dashboard.php', 390)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\v_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/v_dashboard', [], true)
+ 5 APPPATH\Controllers\Admin\AdminController.php(148): view('admin/v_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-22 20:51:45 --> Undefined variable $pengeluaran
+in APPPATH\Views\admin\v_dashboard.php on line 390.
+ 1 APPPATH\Views\admin\v_dashboard.php(390): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengeluaran', 'APPPATH\\Views\\admin\\v_dashboard.php', 390)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\v_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/v_dashboard', [], true)
+ 5 APPPATH\Controllers\Admin\AdminController.php(148): view('admin/v_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-22 21:16:00 --> Array to string conversion
+in APPPATH\Views\admin\v_dashboard.php on line 301.
+ 1 APPPATH\Views\admin\v_dashboard.php(301): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\admin\\v_dashboard.php', 301)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\v_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/v_dashboard', [], true)
+ 5 APPPATH\Controllers\Admin\AdminController.php(148): view('admin/v_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-22 21:22:27 --> Undefined variable $transaksi_pemasukan
+in APPPATH\Controllers\Admin\AdminController.php on line 136.
+ 1 APPPATH\Controllers\Admin\AdminController.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $transaksi_pemasukan', 'APPPATH\\Controllers\\Admin\\AdminController.php', 136)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin\AdminController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-22 21:24:39 --> Undefined variable $total_pemasukan
+in APPPATH\Views\admin\v_dashboard.php on line 302.
+ 1 APPPATH\Views\admin\v_dashboard.php(302): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_pemasukan', 'APPPATH\\Views\\admin\\v_dashboard.php', 302)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\v_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/v_dashboard', [], true)
+ 5 APPPATH\Controllers\Admin\AdminController.php(149): view('admin/v_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-22 21:24:50 --> Undefined variable $total_pemasukan
+in APPPATH\Views\admin\v_dashboard.php on line 302.
+ 1 APPPATH\Views\admin\v_dashboard.php(302): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_pemasukan', 'APPPATH\\Views\\admin\\v_dashboard.php', 302)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\v_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/v_dashboard', [], true)
+ 5 APPPATH\Controllers\Admin\AdminController.php(149): view('admin/v_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2025-05-22 22:05:15 --> mysqli_sql_exception: Unknown column 'tbl_transaksi_kas.id' in 'where clause' in C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_tra...', 0)
+#1 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_tra...')
+#2 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_tra...')
+#3 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_tra...', Array, false)
+#4 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\BaseModel.php(886): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Model.php(693): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\Data\Job\Job1\job11\app\Controllers\Kas\KasController.php(38): CodeIgniter\Model->update('0F9A1F3F', Array)
+#8 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Kas\KasController->editKas('0F9A1F3F')
+#9 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+#10 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Data\Job\Job1\job11\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Data\Job\Job1\job11\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Data\\Job\\Job...')
+#13 {main}
+CRITICAL - 2025-05-22 22:05:15 --> Unknown column 'tbl_transaksi_kas.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_transaksi_kas` SET `kategori` = \'Pemasukan Umum2\', `jumlah` = \'10000\'
+WHERE `tbl_transaksi_kas`.`id` IN (\'0F9A1F3F\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_transaksi_kas` SET `kategori` = \'Pemasukan Umum2\', `jumlah` = \'10000\'
+WHERE `tbl_transaksi_kas`.`id` IN (\'0F9A1F3F\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_transaksi_kas` SET `kategori` = \'Pemasukan Umum2\', `jumlah` = \'10000\'
+WHERE `tbl_transaksi_kas`.`id` IN (\'0F9A1F3F\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_transaksi_kas` SET `kategori` = :kategori:, `jumlah` = :jumlah:
+WHERE `tbl_transaksi_kas`.`id` IN :tbl_transaksi_kas.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(886): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Kas\KasController.php(38): CodeIgniter\Model->update('0F9A1F3F', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->editKas('0F9A1F3F')
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-22 22:30:26 --> Undefined variable $kas_pengeluaran
+in APPPATH\Views\kas\pengeluaran.php on line 116.
+ 1 APPPATH\Views\kas\pengeluaran.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kas_pengeluaran', 'APPPATH\\Views\\kas\\pengeluaran.php', 116)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pengeluaran.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pengeluaran', [], true)
+ 5 APPPATH\Controllers\Kas\KasController.php(239): view('kas/pengeluaran', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPengeluaran()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-22 22:30:52 --> Undefined variable $kas_pengeluaran
+in APPPATH\Views\kas\pengeluaran.php on line 116.
+ 1 APPPATH\Views\kas\pengeluaran.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kas_pengeluaran', 'APPPATH\\Views\\kas\\pengeluaran.php', 116)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pengeluaran.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pengeluaran', [], true)
+ 5 APPPATH\Controllers\Kas\KasController.php(239): view('kas/pengeluaran', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPengeluaran()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-22 22:30:58 --> Undefined variable $kas_pengeluaran
+in APPPATH\Views\kas\pengeluaran.php on line 116.
+ 1 APPPATH\Views\kas\pengeluaran.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kas_pengeluaran', 'APPPATH\\Views\\kas\\pengeluaran.php', 116)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pengeluaran.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pengeluaran', [], true)
+ 5 APPPATH\Controllers\Kas\KasController.php(239): view('kas/pengeluaran', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPengeluaran()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-22 22:31:23 --> Undefined variable $kas_pengeluaran
+in APPPATH\Views\kas\pengeluaran.php on line 116.
+ 1 APPPATH\Views\kas\pengeluaran.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kas_pengeluaran', 'APPPATH\\Views\\kas\\pengeluaran.php', 116)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pengeluaran.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pengeluaran', [], true)
+ 5 APPPATH\Controllers\Kas\KasController.php(239): view('kas/pengeluaran', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPengeluaran()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2025-05-22 22:31:24 --> Undefined variable $kas_pengeluaran
+in APPPATH\Views\kas\pengeluaran.php on line 116.
+ 1 APPPATH\Views\kas\pengeluaran.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kas_pengeluaran', 'APPPATH\\Views\\kas\\pengeluaran.php', 116)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kas\\pengeluaran.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kas/pengeluaran', [], true)
+ 5 APPPATH\Controllers\Kas\KasController.php(239): view('kas/pengeluaran', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kas\KasController->viewPengeluaran()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kas\KasController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

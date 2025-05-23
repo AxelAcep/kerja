@@ -71,9 +71,19 @@
                             <div class="panel panel-white">
                                 <div class="panel-body">
 
+                                    <?php if (session()->getFlashdata('success')): ?>
+                                        <div class="alert alert-success alert-dismissible fade in" role="alert">
+                                            <?= session()->getFlashdata('success'); ?>
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                    <?php endif; ?>
+
+
                                     <h2 class="mb-1" style="margin-bottom:25px;">Pengeluaran Kas</h2>
                                     <!-- Form Input -->
-                                    <form class="form-inline" method="post" action="#">
+                                    <form id="form-kurang-kas" class="form-inline" method="post" action="kurang/data">
                                         <?= csrf_field(); ?>
                                         <div class="row">
                                             <div class="col-md-2 form-group" style="margin-bottom: 15px;">
@@ -87,34 +97,77 @@
                                         </div>
                                         <button type="submit" class="btn btn-success">Kurang Kas</button>
                                     </form>
-
                                     <hr />
 
                                     <!-- Tabel Data Kas -->
                                     <div class="table-responsive">
-                                        <table id="kas-table" class="display table table-striped" style="width: 100%;">
+                                        <table id="kas-table" class="display table" style="width: 100%;">
                                             <thead>
                                                 <tr>
-                                                    <th>No</th>
+                                                    <th>Kode</th>
+                                                    <th>Kategori</th>
                                                     <th>Jumlah</th>
                                                     <th>Tanggal</th>
-                                                    <th>User ID</th>
-                                                    <th>Kategori</th>
+                                                    <th>User</th>
+                                                    <th style="text-align: center;">Action</th>
                                                 </tr>
                                             </thead>
-                                            <tbody>
-                                                <?php $no = 1; ?>
-                                                <?php foreach($kas_pemasukan as $item): ?>
-                                                    <tr>
-                                                        <td><?= $no++; ?></td>
-                                                        <td><?= number_format($item['jumlah'], 0, ',', '.'); ?></td>
-                                                        <td><?= date('d-m-Y', strtotime($item['tanggal'])); ?></td>
-                                                        <td><?= esc($item['user_id']); ?></td>
-                                                        <td><?= esc($item['kategori']); ?></td>
-                                                    </tr>
+                                            <tbody id="body-table">
+                                                <?php $no = 1; foreach ($kas_pemasukan as $kas): ?>
+                                                <tr>
+                                                    <td><?= $kas['kode_kas']; ?></td>
+                                                    <td><?= $kas['kategori']; ?></td>
+                                                    <td><?= number_format($kas['jumlah']); ?></td>
+                                                    <td><?= date('d-m-Y', strtotime($kas['tanggal'])); ?></td>
+                                                    <td><?= $kas['user_id']; ?></td>
+
+                                                    <td style="text-align: center;">
+                                                                                                            <!-- Button Edit (Modal Trigger) -->
+                                                        <button class="btn btn-warning btn-sm" data-toggle="modal" data-target="#editModal<?= $kas['kode_kas']; ?>">
+                                                            Edit
+                                                        </button>
+
+                                                        <!-- Button Delete -->
+                                                        <a href="/kas/pengeluaran/delete/<?= $kas['kode_kas']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin ingin menghapus data ini?')">
+                                                            Delete
+                                                        </a>
+                                                    </td>
+                                                    
+                                                </tr>
                                                 <?php endforeach; ?>
-                                                </tbody>
+                                            </tbody>
                                         </table>
+                                        <?php foreach ($kas_pemasukan as $kas): ?>
+                                            <div class="modal fade" id="editModal<?= $kas['kode_kas']; ?>" tabindex="-1" role="dialog" aria-labelledby="editModalLabel<?= $kas['kode_kas']; ?>" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <form action="/kas/pengeluaran/edit/<?= $kas['kode_kas']; ?>" method="post">
+                                                <?= csrf_field(); ?>
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                    <h5 class="modal-title" id="editModalLabel<?= $kas['kode_kas']; ?>">Edit Data Kas</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                    <div class="form-group">
+                                                        <label>Kategori</label>
+                                                        <input type="text" name="kategori" class="form-control" value="<?= $kas['kategori']; ?>" required />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Jumlah</label>
+                                                        <input type="number" name="jumlah" class="form-control" value="<?= $kas['jumlah']; ?>" required />
+                                                    </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                    <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
+                                                    </div>
+                                                </div>
+                                                </form>
+                                            </div>
+                                            </div>
+                                        <?php endforeach; ?>
+
                                     </div>
 
                                 </div>
@@ -123,9 +176,7 @@
                     </div><!-- /.row -->
 
                     <!-- Footer -->
-                    <footer class="page-footer text-center">
-                        <p class="no-s"><?= date('Y'); ?> &copy; Powered by Ircham Ali.</p>
-                    </footer>
+
 
                 </div><!-- /.container-fluid -->
             </div><!-- /#main-wrapper -->
@@ -146,16 +197,103 @@
 
     <!-- Toastr Flash Message -->
     <script>
-        <?php if (session()->getFlashdata('success')) : ?>
-            $.toast({
-                heading: 'Sukses',
-                text: '<?= session()->getFlashdata('success'); ?>',
-                showHideTransition: 'slide',
-                icon: 'success',
-                position: 'top-right'
+    const table = $('#kas-table').DataTable({
+        "pageLength": 10,       // maksimal 10 baris per halaman
+        "lengthChange": false,  // sembunyikan dropdown jumlah baris
+        "pagingType": "simple", // hanya Previous dan Next tombol
+        "language": {
+            "url": "//cdn.datatables.net/plug-ins/1.13.4/i18n/id.json",
+            "info": "MENAMPIL _START_ - _END_ DARI _TOTAL_ ENTRI",
+            "paginate": {
+                "previous": "Sebelumnya",
+                "next": "Berikutnya"
+            }
+        }
+    });
+    $(document).ready(function () {
+    // Inisialisasi DataTable dengan opsi bahasa Indonesia dan konfigurasi lainnya
+    const table = $('#kas-table').DataTable({
+        "pageLength": 10,       // maksimal 10 baris per halaman
+        "lengthChange": false,  // sembunyikan dropdown jumlah baris
+        "pagingType": "simple", // hanya tombol Previous dan Next
+        "language": {
+            "url": "//cdn.datatables.net/plug-ins/1.13.4/i18n/id.json",
+            "info": "MENAMPIL _START_ - _END_ DARI _TOTAL_ ENTRI",
+            "paginate": {
+                "previous": "Sebelumnya",
+                "next": "Berikutnya"
+            }
+        }
+    });
+
+    // Event submit form kurang kas dengan AJAX
+    $('#form-kurang-kas').on('submit', function (e) {
+                e.preventDefault();
+
+                const jumlah = $('#jumlah').val();
+                const kategori = $('#kategori').val();
+                const csrfName = $('input[name^="csrf_"]').attr('name');
+                const csrfToken = $('input[name^="csrf_"]').val();
+
+                $.ajax({
+                    url: '/kas/kurang/data',
+                    type: 'POST',
+                    data: {
+                        jumlah: jumlah,
+                        kategori: kategori,
+                        [csrfName]: csrfToken
+                    },
+                    success: function (res) {
+                        if (res.success && res.html) {
+                            $('#main-wrapper').html(res.html);
+
+                            $.toast({
+                                heading: 'Berhasil',
+                                text: 'Pengurangan kas berhasil dikurangkan.',
+                                icon: 'success',
+                                position: 'top-right',
+                                showHideTransition: 'slide'
+                            });
+
+                            // Re-init DataTable setelah konten diganti
+                            $('#kas-table').DataTable({
+                                "pageLength": 10,
+                                "lengthChange": false,
+                                "language": {
+                                    "paginate": {
+                                        "previous": "Sebelumnya",
+                                        "next": "Berikutnya"
+                                    },
+                                    "info": "MENAMPIL _START_ - _END_ DARI _TOTAL_ ENTRI",
+                                    url: '//cdn.datatables.net/plug-ins/1.13.4/i18n/id.json'
+                                },
+                                destroy: true
+                            });
+                        }
+                    },
+                    error: function (xhr) {
+                        let errMsg = 'Gagal menambahkan data.';
+                        if (xhr.responseJSON && xhr.responseJSON.message) {
+                            errMsg = xhr.responseJSON.message;
+                        }
+                        $.toast({
+                            heading: 'Error',
+                            text: errMsg,
+                            showHideTransition: 'fade',
+                            icon: 'error',
+                            position: 'top-right'
+                        });
+                    }
+                });
             });
-        <?php endif; ?>
+        });
+
+
     </script>
+
+
+
+
 
 </body>
 

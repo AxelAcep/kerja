@@ -229,7 +229,6 @@ $routes->group('author', ['filter' => 'authauthor'], static function ($routes) {
 $routes->group('kas', ['filter' => 'authcombined'], function($routes) {
     $routes->get('pemasukan', 'Kas\KasController::viewPemasukan');
     $routes->get('pengeluaran', 'Kas\KasController::viewPengeluaran');
-    $routes->get('kategori', 'Kas\KasController::viewKategori');
     $routes->get('laporan', 'Kas\KasController::viewLaporan');
 
 
@@ -239,6 +238,13 @@ $routes->group('kas', ['filter' => 'authcombined'], function($routes) {
     $routes->get('transaksi/data', 'Kas\KasController::getAllTransaksi');
     $routes->post('tambah/data', 'Kas\KasController::tambahKas');
     $routes->post('kurang/data', 'Kas\KasController::kurangKas');
+
+    $routes->post('pemasukan/edit/(:segment)', 'Kas\KasController::editKas/$1');
+    $routes->get('pemasukan/delete/(:segment)', 'Kas\KasController::deleteKas/$1');
+
+    $routes->post('pengeluaran/edit/(:segment)', 'Kas\KasController::editKas/$1');
+    $routes->get('pengeluaran/delete/(:segment)', 'Kas\KasController::deleteKas/$1');
+
 
 });
 
