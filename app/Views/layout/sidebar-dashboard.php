@@ -135,6 +135,7 @@
                 <ul class="sub-menu">
                     <li><a href="/kas/pemasukan">Pemasukan</a></li>
                     <li><a href="/kas/pengeluaran">Pengeluaran</a></li>
+                    <li><a href="/kas/kategori">Kategori</a></li>
                     <li><a href="/kas/laporan">Laporan</a></li>
                 </ul>
             </li>

@@ -6,6 +6,7 @@ use App\Controllers\BaseController;
 use App\Models\UangKasModel;
 use App\Models\TransaksiKasModel;
 use App\Models\CategoryModel;
+use App\Models\KategoriModel;
 use App\Models\CommentModel;
 use App\Models\InboxModel;
 use App\Models\PostModel;
@@ -27,6 +28,8 @@ class KasController extends BaseController
         $this->postModel = new PostModel();
         $this->categoryModel = new CategoryModel();
         $this->tagModel = new TagModel();
+
+        $this->kategoriModel = new KategoriModel();
     }
 
     public function editKas($kode_kas)
@@ -93,6 +96,16 @@ class KasController extends BaseController
             // Update uang kas
             $this->uangModel->update(1, [
                 'jumlah' => $this->uangModel->first()['jumlah'] - $kas['jumlah']
+            ]);
+
+            // Hapus dari transaksi
+            $this->transaksiModel->delete($kode_kas);
+        }
+
+        if ($kas && $kas['jenis'] == 'pengeluaran') {
+            // Update uang kas
+            $this->uangModel->update(1, [
+                'jumlah' => $this->uangModel->first()['jumlah'] + $kas['jumlah']
             ]);
 
             // Hapus dari transaksi
@@ -256,6 +269,7 @@ class KasController extends BaseController
             'breadcrumbs' => $this->request->getUri()->getSegments(),
             'posts' => $this->postModel->get_all_post()->getResultArray(),
             'kas_pemasukan' => $this->transaksiModel->where('jenis', 'pemasukan')->findAll(),
+            'kategori' => $this->kategoriModel->findAll(),
         ];
 
         return view('kas/pemasukan', $data);
@@ -275,7 +289,8 @@ class KasController extends BaseController
             'helper_text' => helper('text'),
             'breadcrumbs' => $this->request->getUri()->getSegments(),
             'posts' => $this->postModel->get_all_post()->getResultArray(),
-            'kas_pemasukan' => $this->transaksiModel->where('jenis', 'pengeluaran')->findAll(),
+            'kas_pengeluaran' => $this->transaksiModel->where('jenis', 'pengeluaran')->findAll(),
+            'kategori' => $this->kategoriModel->findAll(),
         ];
 
         return view('kas/pengeluaran', $data);
@@ -284,19 +299,137 @@ class KasController extends BaseController
 
     public function viewLaporan()
     {
+        // Ambil data jumlah uang kas
+        $uangKas = $this->uangModel->first();
+        $jumlahKas = $uangKas ? intval($uangKas['jumlah']) : 0;
+
+        // Ambil semua transaksi
+        $semuaTransaksi = $this->transaksiModel->orderBy('tanggal', 'DESC')->findAll();
+
+        // Ambil 5 transaksi terakhir
+        $limaTransaksi = array_slice($semuaTransaksi, 0, 5);
+
+        // Siapkan data untuk chart perbandingan
+        $totalPemasukan = 0;
+        $totalPengeluaran = 0;
+        $kategoriPemasukan = [];
+
+        foreach ($semuaTransaksi as $t) {
+            $jumlah = intval($t['jumlah']);
+            if ($t['jenis'] == 'pemasukan') {
+                $totalPemasukan += $jumlah;
+                // Kategori chart pie
+                if (!isset($kategoriPemasukan[$t['kategori']])) {
+                    $kategoriPemasukan[$t['kategori']] = 0;
+                }
+                $kategoriPemasukan[$t['kategori']] += $jumlah;
+            } else {
+                $totalPengeluaran += $jumlah;
+            }
+        }
+
+        // Ubah ke format JavaScript
+        $kategoriLabels = json_encode(array_keys($kategoriPemasukan));
+        $kategoriData = json_encode(array_values($kategoriPemasukan));
+
         $data = [
             'akun' => $this->akun,
-            'title' => 'All Post',
-            'active' => 'kas', // ← ini yang ditambahkan
+            'title' => 'Laporan Kas',
+            'active' => 'kas',
             'total_inbox' => $this->inboxModel->where('inbox_status', 0)->get()->getNumRows(),
             'inboxs' => $this->inboxModel->where('inbox_status', 0)->findAll(),
             'total_comment' => $this->commentModel->where('comment_status', 0)->get()->getNumRows(),
             'comments' => $this->commentModel->where('comment_status', 0)->findAll(6),
             'helper_text' => helper('text'),
             'breadcrumbs' => $this->request->getUri()->getSegments(),
+
+            // Data untuk halaman laporan
+            'jumlah_kas' => $jumlahKas,
+            'lima_transaksi' => $limaTransaksi,
+            'semua_transaksi' => $this->transaksiModel->orderBy('tanggal', 'DESC')->paginate(5, 'transaksi'),
+            'pager' => $this->transaksiModel->pager,
+            'total_pemasukan' => $totalPemasukan,
+            'total_pengeluaran' => $totalPengeluaran,
+            'kategori_labels' => $kategoriLabels,
+            'kategori_data' => $kategoriData,
         ];
+
         return view('kas/laporan', $data);
     }
+
+    // Menampilkan halaman dan semua kategori
+    public function viewKategori()
+    {
+        $data = [
+            'akun' => $this->akun,
+            'title' => 'Laporan Kas',
+            'active' => 'kas',
+            'total_inbox' => $this->inboxModel->where('inbox_status', 0)->get()->getNumRows(),
+            'inboxs' => $this->inboxModel->where('inbox_status', 0)->findAll(),
+            'total_comment' => $this->commentModel->where('comment_status', 0)->get()->getNumRows(),
+            'comments' => $this->commentModel->where('comment_status', 0)->findAll(6),
+            'helper_text' => helper('text'),
+            'breadcrumbs' => $this->request->getUri()->getSegments(),
+            
+            'title' => 'Kategori Transaksi',
+            'kategori' => $this->kategoriModel->findAll(),
+        ];
+        return view('kas/kategori', $data);
+    }
+
+    // Simpan kategori baru
+    public function simpanKategori()
+    {
+        $this->kategoriModel->save([
+            'nama_kategori' => $this->request->getPost('nama_kategori')
+        ]);
+        return redirect()->to(base_url('kas/kategori'));
+    }
+
+    // Edit form
+     public function editKategori()
+    {
+        // 1) Ambil POST
+        $id             = $this->request->getPost('id');
+        $nama_kategori  = $this->request->getPost('nama_kategori');
+
+        // 2) Validasi
+        if (empty($id) || empty($nama_kategori)) {
+            session()->setFlashdata('error', 'Data tidak lengkap.');
+            return redirect()->to(site_url('kas/kategori'));
+        }
+
+        // 3) Simpan
+        $model = new KategoriModel();
+        if ($model->update($id, ['nama_kategori' => $nama_kategori])) {
+            session()->setFlashdata('success', 'Kategori berhasil diubah.');
+        } else {
+            session()->setFlashdata('error', 'Gagal mengubah kategori.');
+        }
+
+        // 4) Redirect kembali
+        return redirect()->to(site_url('kas/kategori'));
+    }
+
+
+    // Proses update
+    public function updateKategori($id)
+    {
+        $this->kategoriModel->update($id, [
+            'nama_kategori' => $this->request->getPost('nama_kategori')
+        ]);
+        return redirect()->to(base_url('kas/kategori'));
+    }
+
+    // Hapus kategori
+    public function hapusKategori($id)
+    {
+        $this->kategoriModel->delete($id);
+        return redirect()->to(base_url('kas/kategori'));
+    }
+
+
+
 
 
 

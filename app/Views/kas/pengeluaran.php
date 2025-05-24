@@ -11,7 +11,6 @@
     <meta name="author" content="Ircham Ali" />
     <link rel="shortcut icon" href="/assets/frontend/img/apple-touch-icon.png" />
 
-    <!-- Styles -->
     <link href="/assets/backend/plugins/pace-master/themes/blue/pace-theme-flash.css" rel="stylesheet" />
     <link href="/assets/backend/plugins/uniform/css/uniform.default.min.css" rel="stylesheet" />
     <link href="/assets/backend/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -56,16 +55,13 @@
 <body class="page-header-fixed compact-menu page-sidebar-fixed">
     <div class="overlay"></div>
 
-    <!-- Sidebar -->
     <?= $this->include('layout/sidebar-dashboard'); ?>
 
-    <!-- Main Content -->
     <main class="page-content content-wrap">
         <div class="page-inner">
             <div id="main-wrapper">
                 <div class="container-fluid">
 
-                    <!-- Card Panel -->
                     <div class="row">
                         <div class="col-md-12">
                             <div class="panel panel-white">
@@ -80,9 +76,7 @@
                                         </div>
                                     <?php endif; ?>
 
-
                                     <h2 class="mb-1" style="margin-bottom:25px;">Pengeluaran Kas</h2>
-                                    <!-- Form Input -->
                                     <form id="form-kurang-kas" class="form-inline" method="post" action="kurang/data">
                                         <?= csrf_field(); ?>
                                         <div class="row">
@@ -92,14 +86,20 @@
                                             </div>
                                             <div class="col-md-2 form-group" style="margin-bottom: 15px; padding-left: 5px;">
                                                 <label for="kategori">Kategori</label>
-                                                <input type="text" class="form-control" id="kategori" name="kategori" placeholder="Masukkan kategori" required />
+                                                <select class="form-control" id="kategori" name="kategori" required>
+                                                    <option value="">Pilih Kategori</option>
+                                                    <?php foreach ($kategori as $cat): ?>
+                                                        <option value="<?= esc($cat['nama_kategori']); ?>">
+                                                            <?= esc($cat['nama_kategori']); ?>
+                                                        </option>
+                                                    <?php endforeach; ?>
+                                                </select>
                                             </div>
                                         </div>
                                         <button type="submit" class="btn btn-success">Kurang Kas</button>
                                     </form>
                                     <hr />
 
-                                    <!-- Tabel Data Kas -->
                                     <div class="table-responsive">
                                         <table id="kas-table" class="display table" style="width: 100%;">
                                             <thead>
@@ -113,7 +113,7 @@
                                                 </tr>
                                             </thead>
                                             <tbody id="body-table">
-                                                <?php $no = 1; foreach ($kas_pemasukan as $kas): ?>
+                                                <?php $no = 1; foreach ($kas_pengeluaran as $kas): ?>
                                                 <tr>
                                                     <td><?= $kas['kode_kas']; ?></td>
                                                     <td><?= $kas['kategori']; ?></td>
@@ -122,22 +122,20 @@
                                                     <td><?= $kas['user_id']; ?></td>
 
                                                     <td style="text-align: center;">
-                                                                                                            <!-- Button Edit (Modal Trigger) -->
                                                         <button class="btn btn-warning btn-sm" data-toggle="modal" data-target="#editModal<?= $kas['kode_kas']; ?>">
                                                             Edit
                                                         </button>
 
-                                                        <!-- Button Delete -->
                                                         <a href="/kas/pengeluaran/delete/<?= $kas['kode_kas']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin ingin menghapus data ini?')">
                                                             Delete
                                                         </a>
                                                     </td>
-                                                    
+
                                                 </tr>
                                                 <?php endforeach; ?>
                                             </tbody>
                                         </table>
-                                        <?php foreach ($kas_pemasukan as $kas): ?>
+                                        <?php foreach ($kas_pengeluaran as $kas): ?>
                                             <div class="modal fade" id="editModal<?= $kas['kode_kas']; ?>" tabindex="-1" role="dialog" aria-labelledby="editModalLabel<?= $kas['kode_kas']; ?>" aria-hidden="true">
                                             <div class="modal-dialog" role="document">
                                                 <form action="/kas/pengeluaran/edit/<?= $kas['kode_kas']; ?>" method="post">
@@ -152,7 +150,14 @@
                                                     <div class="modal-body">
                                                     <div class="form-group">
                                                         <label>Kategori</label>
-                                                        <input type="text" name="kategori" class="form-control" value="<?= $kas['kategori']; ?>" required />
+                                                        <select name="kategori" class="form-control" required>
+                                                            <?php foreach ($kategori as $cat): ?>
+                                                                <option value="<?= esc($cat['nama_kategori']); ?>"
+                                                                    <?= ($cat['nama_kategori'] == $kas['kategori']) ? 'selected' : ''; ?>>
+                                                                    <?= esc($cat['nama_kategori']); ?>
+                                                                </option>
+                                                            <?php endforeach; ?>
+                                                        </select>
                                                     </div>
                                                     <div class="form-group">
                                                         <label>Jumlah</label>
@@ -173,17 +178,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div><!-- /.row -->
+                    </div></div></div></div></main>
 
-                    <!-- Footer -->
-
-
-                </div><!-- /.container-fluid -->
-            </div><!-- /#main-wrapper -->
-        </div><!-- /.page-inner -->
-    </main>
-
-    <!-- Scripts -->
     <script src="/assets/backend/plugins/jquery/jquery-2.1.4.min.js"></script>
     <script src="/assets/backend/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="/assets/backend/plugins/datatables/js/jquery.datatables.min.js"></script>
@@ -195,42 +191,43 @@
     <script src="/assets/backend/plugins/waves/waves.min.js"></script>
     <script src="/assets/backend/js/modern.min.js"></script>
 
-    <!-- Toastr Flash Message -->
     <script>
-    const table = $('#kas-table').DataTable({
-        "pageLength": 10,       // maksimal 10 baris per halaman
-        "lengthChange": false,  // sembunyikan dropdown jumlah baris
-        "pagingType": "simple", // hanya Previous dan Next tombol
-        "language": {
-            "url": "//cdn.datatables.net/plug-ins/1.13.4/i18n/id.json",
-            "info": "MENAMPIL _START_ - _END_ DARI _TOTAL_ ENTRI",
-            "paginate": {
-                "previous": "Sebelumnya",
-                "next": "Berikutnya"
+        const table = $('#kas-table').DataTable({
+            "pageLength": 10,
+            "lengthChange": false,
+            "pagingType": "simple",
+            "language": {
+                "url": "//cdn.datatables.net/plug-ins/1.13.4/i18n/id.json",
+                "info": "MENAMPIL _START_ - _END_ DARI _TOTAL_ ENTRI",
+                "paginate": {
+                    "previous": "Sebelumnya",
+                    "next": "Berikutnya"
+                }
             }
-        }
-    });
-    $(document).ready(function () {
-    // Inisialisasi DataTable dengan opsi bahasa Indonesia dan konfigurasi lainnya
-    const table = $('#kas-table').DataTable({
-        "pageLength": 10,       // maksimal 10 baris per halaman
-        "lengthChange": false,  // sembunyikan dropdown jumlah baris
-        "pagingType": "simple", // hanya tombol Previous dan Next
-        "language": {
-            "url": "//cdn.datatables.net/plug-ins/1.13.4/i18n/id.json",
-            "info": "MENAMPIL _START_ - _END_ DARI _TOTAL_ ENTRI",
-            "paginate": {
-                "previous": "Sebelumnya",
-                "next": "Berikutnya"
-            }
-        }
-    });
+        });
+        $(document).ready(function () {
+            // Inisialisasi DataTable sudah dilakukan di luar document.ready atau bisa dihapus salah satunya jika double
+            // Yang di dalam document.ready ini sepertinya duplikat, bisa dihapus salah satu. Saya akan hapus yang di luar document.ready.
+            // const table = $('#kas-table').DataTable({ // <-- Hapus ini jika di luar document.ready sudah ada
+            //     "pageLength": 10,
+            //     "lengthChange": false,
+            //     "pagingType": "simple",
+            //     "language": {
+            //         "url": "//cdn.datatables.net/plug-ins/1.13.4/i18n/id.json",
+            //         "info": "MENAMPIL _START_ - _END_ DARI _TOTAL_ ENTRI",
+            //         "paginate": {
+            //             "previous": "Sebelumnya",
+            //             "next": "Berikutnya"
+            //         }
+            //     }
+            // });
 
-    // Event submit form kurang kas dengan AJAX
-    $('#form-kurang-kas').on('submit', function (e) {
+            // Event submit form tambah kas dengan AJAX
+            $('#form-kurang-kas').on('submit', function (e) {
                 e.preventDefault();
 
                 const jumlah = $('#jumlah').val();
+                // Kategori sekarang adalah nilai dari <select>
                 const kategori = $('#kategori').val();
                 const csrfName = $('input[name^="csrf_"]').attr('name');
                 const csrfToken = $('input[name^="csrf_"]').val();
@@ -240,22 +237,31 @@
                     type: 'POST',
                     data: {
                         jumlah: jumlah,
-                        kategori: kategori,
+                        kategori: kategori, // Ini akan mengirim nilai terpilih dari select
                         [csrfName]: csrfToken
                     },
                     success: function (res) {
                         if (res.success && res.html) {
-                            $('#main-wrapper').html(res.html);
+                            // Mengganti seluruh #main-wrapper bisa menyebabkan DataTable ter-render ulang
+                            // Ini mungkin penyebab DataTable tidak berfungsi dengan baik setelah AJAX.
+                            // Lebih baik perbarui hanya body tabelnya.
+                            // $('#main-wrapper').html(res.html); // Pertimbangkan untuk tidak menggunakan ini
 
                             $.toast({
                                 heading: 'Berhasil',
-                                text: 'Pengurangan kas berhasil dikurangkan.',
+                                text: 'Pengeluaran kas berhasil dikurangkan.',
                                 icon: 'success',
                                 position: 'top-right',
                                 showHideTransition: 'slide'
                             });
 
-                            // Re-init DataTable setelah konten diganti
+                            // Karena Anda memuat ulang seluruh #main-wrapper di success,
+                            // maka DataTable harus di-inisialisasi ulang.
+                            // Namun, jika Anda mengubah ke pembaruan tabel secara dinamis,
+                            // Anda mungkin tidak perlu baris ini.
+                            // Jika Anda tetap ingin memuat ulang seluruh kontainer,
+                            // pastikan untuk menghancurkan instance DataTable yang lama sebelum inisialisasi baru.
+                            $('#kas-table').DataTable().destroy(); // Hancurkan instance yang lama
                             $('#kas-table').DataTable({
                                 "pageLength": 10,
                                 "lengthChange": false,
@@ -267,14 +273,39 @@
                                     "info": "MENAMPIL _START_ - _END_ DARI _TOTAL_ ENTRI",
                                     url: '//cdn.datatables.net/plug-ins/1.13.4/i18n/id.json'
                                 },
-                                destroy: true
+                                // destroy: true // ini sudah ada di atas
+                            });
+
+                            // Jika Anda ingin memperbarui tabel secara dinamis tanpa reload semua,
+                            // Anda harus mendapatkan data baru dari respons dan menambahkannya ke tabel.
+                            // Ini akan lebih kompleks tapi UX lebih baik.
+                            // Misalnya:
+                            // table.row.add([
+                            //     res.newData.kode_kas,
+                            //     res.newData.kategori,
+                            //     res.newData.jumlah,
+                            //     res.newData.tanggal,
+                            //     res.newData.user_id,
+                            //     '<button class="btn btn-warning btn-sm" data-toggle="modal" data-target="#editModal' + res.newData.kode_kas + '">Edit</button> <a href="/kas/pengeluaran/delete/' + res.newData.kode_kas + '" class="btn btn-danger btn-sm" onclick="return confirm(\'Yakin ingin menghapus data ini?\')">Delete</a>'
+                            // ]).draw(false);
+                            // Lalu kosongkan form: $('#form-kurang-kas')[0].reset();
+
+                        } else {
+                            $.toast({
+                                heading: 'Error',
+                                text: res.message || 'Gagal menambahkan data. HTML tidak diterima.',
+                                showHideTransition: 'fade',
+                                icon: 'error',
+                                position: 'top-right'
                             });
                         }
                     },
                     error: function (xhr) {
-                        let errMsg = 'Gagal menambahkan data.';
+                        let errMsg = 'Terjadi kesalahan pada server.';
                         if (xhr.responseJSON && xhr.responseJSON.message) {
                             errMsg = xhr.responseJSON.message;
+                        } else if (xhr.responseText) {
+                            errMsg = 'Respons server: ' + xhr.responseText.substring(0, 100) + '...';
                         }
                         $.toast({
                             heading: 'Error',
@@ -287,14 +318,7 @@
                 });
             });
         });
-
-
     </script>
-
-
-
-
-
 </body>
 
 </html>
